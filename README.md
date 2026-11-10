@@ -13,3 +13,4 @@ This repo is the source of truth for usa-rem.com. Netlify project `hard-hat-part
 ## History
 
 - 2026-11-10: baseline commit, taken from the live Netlify deploy of 2026-11-05 (6aecf936).
+- 2026-11-10: Jomar moved to the live portfolio; card screenshot recaptured from jomarinc.com.
