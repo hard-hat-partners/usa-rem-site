@@ -1,0 +1,29 @@
+/* BRAND TOKENS: the one place to reskin. Name lives in brand.js. */
+:root{
+  --brand:#B4531F; --brand-deep:#8E3F15; --brand-tint:#F2E4D8; --brand-on-dark:#D0652B; --brand-light:#D0652B; --brand-soft:#E9A57C; --mock-hi:#F28C28; --mock-hi2:#D9822B;
+  --dark:#1B2531; --navy:#24344A;
+  --concrete:#6E6F6B; --concrete-line:#DCD8D1; --concrete-light:#ECE8E1;
+  --paper:#F8F5F0; --ink:#1E1C1A;
+  --f-head:'Open Sans',system-ui,sans-serif; --f-body:'Open Sans',system-ui,sans-serif; --f-sub:'Bebas Neue',Impact,sans-serif; --sub-track:.05em;
+}
+/* USA-REM: navy #203E75 + red #AD1528. Active when brand.js ACTIVE_BRAND = 'usarem'. */
+:root[data-brand="usarem"]{
+  --brand:#AD1528; --brand-deep:#8A1020; --brand-tint:#F6E3E5; --brand-on-dark:#F2838E; --brand-light:#F2838E; --brand-soft:#F5A9B0;
+  --mock-hi:#D9475A; --mock-hi2:#AD1528;
+  --dark:#14264A; --navy:#203E75;
+}
+/* Legacy theme switch (unused) */
+:root[data-theme="current"]{
+  --brand:#203E75; --brand-deep:#162C55; --brand-tint:#E2E7F1; --brand-on-dark:#D9475A; --brand-light:#D9475A;
+  --dark:#14264A; --navy:#203E75;
+}
+:root[data-type="alt"]{
+  --f-head:'Archivo',system-ui,sans-serif; --f-sub:'Barlow Condensed',sans-serif; --sub-track:.08em;
+}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:var(--brand);text-decoration:none}
+a:hover{color:var(--brand-deep);text-decoration:underline}
+
+html,body{overflow-x:hidden;overflow-x:clip;max-width:100%}
+image-slot{pointer-events:none}

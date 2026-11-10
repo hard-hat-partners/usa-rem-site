@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contractor Website Design in Houston and DFW | USA-REM</title>
+<link rel="canonical" href="https://usa-rem.com/websites">
+<meta property="og:url" content="https://usa-rem.com/websites">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="USA-REM">
+<meta property="og:title" content="Contractor Website Design in Houston and DFW | USA-REM">
+<meta property="og:description" content="Custom websites for contractors, engineers, and suppliers across Texas. Copywriting included, built for every device, and you own every page.">
+<meta property="og:image" content="https://usa-rem.com/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="USA-REM logo">
+<link rel="image_src" href="https://usa-rem.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contractor Website Design in Houston and DFW | USA-REM">
+<meta name="twitter:description" content="Custom websites for contractors, engineers, and suppliers across Texas. Copywriting included, built for every device, and you own every page.">
+<meta name="twitter:image" content="https://usa-rem.com/og-image.png">
+<meta name="description" content="Custom websites for contractors, engineers, and suppliers across Texas. Copywriting included, built for every device, and you own every page.">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="./favicon-512.png">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="/assets/fonts/fonts.css" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+:root{
+  --brand:var(--brand); --brand-deep:var(--brand-deep); --brand-tint:var(--brand-tint); --brand-light:var(--brand-light);
+  --dark:#1B2531; --navy:#24344A;
+  --concrete:#6E6F6B; --concrete-line:#DCD8D1; --concrete-light:#ECE8E1;
+  --paper:#F8F5F0; --ink:#1E1C1A;
+  --f-head:'Open Sans',system-ui,sans-serif; --f-body:'Open Sans',system-ui,sans-serif; --f-sub:'Bebas Neue',Impact,sans-serif; --sub-track:.05em;
+}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:var(--brand);text-decoration:none}
+a:hover{color:var(--brand-deep);text-decoration:underline}
+</style>
+<link rel="stylesheet" href="./brand.css">
+<script src="./brand.js"></script>
+<script src="./motion.js"></script>
+</helmet>
+
+<div style="min-height:100vh;background:var(--paper)">
+
+<header style="position:sticky;top:0;z-index:20;background:rgba(248,245,240,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--concrete-line)">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="index.html" style="flex:none;display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)">
+      <img src="assets/usarem-logo-color.png" alt="USA-REM" style="height:34px;width:auto;max-width:100%;display:block">
+    </a>
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+      <nav style="display:flex;align-items:center;gap:{{ navGap }}">
+        
+          <a href="index.html" style="font-size:{{ navSize }};white-space:nowrap;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#55524D;text-decoration:none;padding:6px 0">Home</a>
+        
+          <a href="websites.html" style="font-size:{{ navSize }};white-space:nowrap;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--brand);text-decoration:none;padding:6px 0">Websites</a>
+        
+          <a href="systems.html" style="font-size:{{ navSize }};white-space:nowrap;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#55524D;text-decoration:none;padding:6px 0">Systems</a>
+        
+          <a href="about.html" style="font-size:{{ navSize }};white-space:nowrap;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#55524D;text-decoration:none;padding:6px 0">About</a>
+        
+          <a href="contact.html" style="font-size:{{ navSize }};white-space:nowrap;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#55524D;text-decoration:none;padding:6px 0">Contact</a>
+        
+      </nav>
+    </sc-if>
+    <div style="display:flex;align-items:center;gap:12px">
+      <sc-if value="{{ showCta }}" hint-placeholder-val="{{ true }}"><a href="contact.html" style="background:var(--brand);color:#fff;font-weight:700;font-size:15px;padding:12px 20px;border-radius:4px;text-decoration:none;white-space:nowrap" style-hover="background:var(--brand-deep);color:#fff;text-decoration:none">Start a conversation</a></sc-if>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="width:44px;height:44px;border:1px solid var(--concrete-line);background:#fff;border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer">
+          <span style="width:18px;height:2px;background:var(--ink)"></span>
+          <span style="width:18px;height:2px;background:var(--ink)"></span>
+          <span style="width:18px;height:2px;background:var(--ink)"></span>
+        </button>
+      </sc-if>
+    </div>
+  </div>
+  <sc-if value="{{ false }}" hint-placeholder-val="{{ false }}">
+    <nav style="display:flex;flex-direction:column;padding:8px 20px 20px;border-top:1px solid var(--concrete-line);background:var(--paper)">
+      
+        <a href="index.html" style="font-size:16px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);padding:14px 0;border-bottom:1px solid var(--concrete-line);text-decoration:none">Home</a>
+      
+        <a href="websites.html" style="font-size:16px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);padding:14px 0;border-bottom:1px solid var(--concrete-line);text-decoration:none">Websites</a>
+      
+        <a href="systems.html" style="font-size:16px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);padding:14px 0;border-bottom:1px solid var(--concrete-line);text-decoration:none">Systems</a>
+      
+        <a href="about.html" style="font-size:16px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);padding:14px 0;border-bottom:1px solid var(--concrete-line);text-decoration:none">About</a>
+      
+        <a href="contact.html" style="font-size:16px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);padding:14px 0;border-bottom:1px solid var(--concrete-line);text-decoration:none">Contact</a>
+      
+      <a data-menu-cta="1" href="contact.html" style="margin-top:18px;display:block;text-align:center;padding:16px 20px;background:var(--brand);color:#fff;font-weight:700;font-size:15px;padding:12px 20px;border-radius:4px;text-decoration:none;" style-hover="background:var(--brand-deep);color:#fff;text-decoration:none">Start a conversation</a>
+    </nav>
+  </sc-if>
+</header>
+
+<section data-screen-label="Websites hero" style="position:relative;background:var(--dark);color:#fff;overflow:hidden">
+  <div aria-hidden="false" style="position:absolute;top:50%;right:clamp(16px,3vw,48px);width:min(60%,860px);min-width:520px;transform:translateY(-46%);opacity:{{ heroDevOpacity }};pointer-events:none">
+    <a href="https://centerpoint-is.com/" target="_blank" rel="noopener" aria-label="CenterPoint Integrated Solutions website on laptop, tablet, and phone" style="position:relative;display:block;padding:0 0 9% 0;text-decoration:none;pointer-events:auto">
+    <div style="width:86%;margin-left:auto;display:flex;flex-direction:column;align-items:center">
+      <div style="width:100%;background:#1A1D21;border-radius:12px 12px 0 0;padding:2.2% 2.2% 0">
+        <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:#fff;border-radius:2px 2px 0 0"><img src="assets/shot-centerpoint.jpg" alt="CenterPoint Integrated Solutions website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+        <div style="height:10px"></div>
+      </div>
+      <div style="width:112%;height:12px;background:linear-gradient(#D6D3CD,#A9A59E);border-radius:0 0 10px 10px"></div>
+    </div>
+    <div style="position:absolute;left:0;bottom:0;width:28%;background:#1A1D21;border-radius:16px;padding:3.2%;box-shadow:0 24px 40px -20px rgba(0,0,0,.45)">
+      <div style="position:relative;aspect-ratio:820/1180;overflow:hidden;background:#fff;border-radius:4px"><img src="assets/shot-centerpoint.jpg" alt="CenterPoint Integrated Solutions website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+    </div>
+    <div style="position:absolute;right:4%;bottom:3%;width:15%;background:#1A1D21;border-radius:18px;padding:2.2% 1.6%;box-shadow:0 24px 40px -20px rgba(0,0,0,.5)">
+      <div style="position:relative;aspect-ratio:390/844;overflow:hidden;background:#fff;border-radius:10px"><img src="assets/shot-centerpoint.jpg" alt="CenterPoint Integrated Solutions website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+    </div>
+  </a>
+  </div>
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,26,34,1) 0%,rgba(20,26,34,.92) 38%,rgba(20,26,34,.35) 70%,rgba(20,26,34,0) 100%);pointer-events:none"></div>
+  <div style="position:relative;max-width:1280px;margin:0 auto;min-height:clamp(480px,62vh,680px);padding:clamp(72px,10vw,140px) clamp(20px,4vw,48px) clamp(48px,6vw,80px);display:flex;flex-direction:column;justify-content:flex-end;pointer-events:none">
+    <div style="display:flex;flex-direction:column;gap:26px;max-width:620px;pointer-events:auto">
+    <div style="font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:22px;color:var(--brand-light);text-transform:uppercase">Websites</div>
+    <h1 style="margin:0;font-family:var(--f-head);font-weight:800;font-size:clamp(40px,5.6vw,72px);line-height:1.03;letter-spacing:-.025em;text-wrap:balance">Your website is your digital resume.</h1>
+    <p style="margin:0;font-size:clamp(17px,1.5vw,20px);line-height:1.6;color:#E4E0DA;max-width:560px;text-wrap:pretty">Developers, GCs, and future hires go to your website to confirm what they've already heard about you. We make sure it backs up your reputation, page by page.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px">
+      <a href="contact.html" style="background:var(--brand);color:#fff;font-weight:700;font-size:16px;padding:16px 26px;border-radius:4px;text-decoration:none;white-space:nowrap" style-hover="background:var(--brand-deep);color:#fff;text-decoration:none">Start a conversation</a>
+      <a href="#gallery" style="background:transparent;color:#fff;font-weight:700;font-size:16px;padding:15px 25px;border-radius:4px;border:1.5px solid rgba(255,255,255,.7);text-decoration:none;white-space:nowrap" style-hover="background:#fff;color:var(--ink);text-decoration:none">See our work</a>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section data-screen-label="Who looks" style="background:#fff;border-top:1px solid var(--concrete-line);border-bottom:1px solid var(--concrete-line)">
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,8vw,112px) clamp(20px,4vw,48px);display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:14px;max-width:760px">
+      <div style="font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:22px;color:var(--brand);text-transform:uppercase">Who's looking</div>
+      <h2 style="margin:0;font-family:var(--f-head);font-weight:800;font-size:clamp(32px,3.6vw,48px);line-height:1.08;letter-spacing:-.02em;text-wrap:balance">The people who decide your next job check you out first.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:{{ audienceCols }};grid-auto-rows:auto;gap:20px">
+      
+        <article style="position:relative;overflow:hidden;display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:12px;padding:clamp(30px,2.8vw,36px) clamp(22px,2.4vw,30px) clamp(24px,2.4vw,30px);background:var(--dark);color:#fff;border-radius:8px;box-shadow:0 30px 60px -38px rgba(20,14,10,.75);transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease" style-hover="transform:translateY(-6px);box-shadow:0 40px 70px -34px rgba(20,14,10,.8)">
+          <div aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:28px 28px;pointer-events:none"></div>
+          <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(90% 70% at 100% 0%,rgba(255,225,200,.2) 0%,rgba(255,225,200,0) 60%),radial-gradient(90% 80% at 0% 100%,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 60%);pointer-events:none"></div>
+          <span aria-hidden="true" style="position:absolute;left:0;right:0;top:0;height:6px;background:repeating-linear-gradient(45deg,var(--brand) 0 10px,var(--brand-deep) 10px 20px)"></span>
+          <span style="position:relative;font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:18px;line-height:1;color:var(--brand-light);text-transform:uppercase">Before they sign</span>
+          <h3 style="position:relative;margin:0;align-self:start;font-family:var(--f-head);font-weight:800;font-size:clamp(24px,2.2vw,28px);line-height:1.15;letter-spacing:-.015em">Owners and developers</h3>
+          <p style="position:relative;margin:0;align-self:start;font-size:16px;line-height:1.6;color:rgba(255,255,255,.9);text-wrap:pretty">They want proof you deliver on schedule and on budget, with work that looks like theirs.</p>
+          <div style="position:relative;align-self:end;margin-top:6px;padding-top:16px;border-top:1px solid rgba(255,255,255,.22);display:flex;flex-direction:column;gap:10px">
+            <span style="font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.78)">What they check</span>
+            <div style="display:flex;flex-wrap:wrap;gap:6px">
+              <span style="font-size:13px;font-weight:700;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:5px 10px;border-radius:3px">Projects</span><span style="font-size:13px;font-weight:700;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:5px 10px;border-radius:3px">Schedule</span><span style="font-size:13px;font-weight:700;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:5px 10px;border-radius:3px">Budget</span>
+            </div>
+          </div>
+        </article>
+      
+        <article style="position:relative;overflow:hidden;display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:12px;padding:clamp(30px,2.8vw,36px) clamp(22px,2.4vw,30px) clamp(24px,2.4vw,30px);background:var(--brand);color:#fff;border-radius:8px;box-shadow:0 30px 60px -38px rgba(20,14,10,.75);transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease" style-hover="transform:translateY(-6px);box-shadow:0 40px 70px -34px rgba(20,14,10,.8)">
+          <div aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:28px 28px;pointer-events:none"></div>
+          <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(90% 70% at 100% 0%,rgba(255,225,200,.2) 0%,rgba(255,225,200,0) 60%),radial-gradient(90% 80% at 0% 100%,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 60%);pointer-events:none"></div>
+          <span aria-hidden="true" style="position:absolute;left:0;right:0;top:0;height:6px;background:repeating-linear-gradient(45deg,var(--dark) 0 10px,var(--brand-deep) 10px 20px)"></span>
+          <span style="position:relative;font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:18px;line-height:1;color:#fff;text-transform:uppercase">Before they team up</span>
+          <h3 style="position:relative;margin:0;align-self:start;font-family:var(--f-head);font-weight:800;font-size:clamp(24px,2.2vw,28px);line-height:1.15;letter-spacing:-.015em">Partners and contractors</h3>
+          <p style="position:relative;margin:0;align-self:start;font-size:16px;line-height:1.6;color:rgba(255,255,255,.9);text-wrap:pretty">They want to know your scope, your capacity, and that you show up ready to work.</p>
+          <div style="position:relative;align-self:end;margin-top:6px;padding-top:16px;border-top:1px solid rgba(255,255,255,.22);display:flex;flex-direction:column;gap:10px">
+            <span style="font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.78)">What they check</span>
+            <div style="display:flex;flex-wrap:wrap;gap:6px">
+              <span style="font-size:13px;font-weight:700;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:5px 10px;border-radius:3px">Scope</span><span style="font-size:13px;font-weight:700;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:5px 10px;border-radius:3px">Capacity</span><span style="font-size:13px;font-weight:700;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:5px 10px;border-radius:3px">Safety</span>
+            </div>
+          </div>
+        </article>
+      
+        <article style="position:relative;overflow:hidden;display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:12px;padding:clamp(30px,2.8vw,36px) clamp(22px,2.4vw,30px) clamp(24px,2.4vw,30px);background:var(--navy);color:#fff;border-radius:8px;box-shadow:0 30px 60px -38px rgba(20,14,10,.75);transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease" style-hover="transform:translateY(-6px);box-shadow:0 40px 70px -34px rgba(20,14,10,.8)">
+          <div aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:28px 28px;pointer-events:none"></div>
+          <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(90% 70% at 100% 0%,rgba(255,225,200,.2) 0%,rgba(255,225,200,0) 60%),radial-gradient(90% 80% at 0% 100%,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 60%);pointer-events:none"></div>
+          <span aria-hidden="true" style="position:absolute;left:0;right:0;top:0;height:6px;background:repeating-linear-gradient(45deg,var(--brand) 0 10px,var(--brand-deep) 10px 20px)"></span>
+          <span style="position:relative;font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:18px;line-height:1;color:var(--brand-light);text-transform:uppercase">Before they apply</span>
+          <h3 style="position:relative;margin:0;align-self:start;font-family:var(--f-head);font-weight:800;font-size:clamp(24px,2.2vw,28px);line-height:1.15;letter-spacing:-.015em">Future hires</h3>
+          <p style="position:relative;margin:0;align-self:start;font-size:16px;line-height:1.6;color:rgba(255,255,255,.9);text-wrap:pretty">Skilled people want to see the work, the crews, and the company they would be joining.</p>
+          <div style="position:relative;align-self:end;margin-top:6px;padding-top:16px;border-top:1px solid rgba(255,255,255,.22);display:flex;flex-direction:column;gap:10px">
+            <span style="font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.78)">What they check</span>
+            <div style="display:flex;flex-wrap:wrap;gap:6px">
+              <span style="font-size:13px;font-weight:700;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:5px 10px;border-radius:3px">Crews</span><span style="font-size:13px;font-weight:700;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:5px 10px;border-radius:3px">Culture</span><span style="font-size:13px;font-weight:700;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:5px 10px;border-radius:3px">Careers</span>
+            </div>
+          </div>
+        </article>
+      
+    </div>
+  </div>
+</section>
+
+<section id="gallery" data-screen-label="Website gallery" style="background:var(--dark);color:#fff">
+<div style="max-width:1280px;margin:0 auto;padding:clamp(56px,8vw,112px) clamp(20px,4vw,48px);display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px">
+    <div style="display:flex;flex-direction:column;gap:14px;max-width:720px">
+      <div style="font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:22px;color:var(--brand-light);text-transform:uppercase">Website gallery</div>
+      <h2 style="margin:0;font-family:var(--f-head);font-weight:800;font-size:clamp(32px,3.6vw,48px);line-height:1.08;letter-spacing:-.02em;text-wrap:balance">Built for the companies that build.</h2>
+    </div>
+    <span style="font-size:15px;color:#C9C4BC">Click any site to visit it live. Each opens in a new tab.</span>
+  </div>
+  <div style="display:grid;grid-template-columns:{{ galleryCols }};gap:28px 20px">
+    
+      <a href="https://oscarordunoinc.com/" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#fff;transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="text-decoration:none;color:#fff;transform:translateY(-4px)">
+        <div style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 24px 44px -26px rgba(0,0,0,.7)">
+          <div style="height:26px;flex:none;display:flex;align-items:center;gap:5px;padding:0 10px;background:var(--concrete-light);border-bottom:1px solid var(--concrete-line)"><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="margin-left:8px;padding:2px 8px;background:#fff;border-radius:3px;font-size:10px;color:var(--concrete);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">oscarordunoinc.com</span></div>
+          <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ false }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="" poster="assets/shot-oscar.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="Oscar Orduño, Inc. website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ true }}" hint-placeholder-val="{{ true }}"><img src="assets/shot-oscar.jpg" alt="Oscar Orduño, Inc. website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-weight:800;font-size:17px">Oscar Orduño, Inc.</span>
+          <span style="font-size:14px;color:#C9C4BC">Engineering</span>
+        </div>
+      </a>
+    
+      <a href="https://authersbuildinggroup.com/" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#fff;transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="text-decoration:none;color:#fff;transform:translateY(-4px)">
+        <div style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 24px 44px -26px rgba(0,0,0,.7)">
+          <div style="height:26px;flex:none;display:flex;align-items:center;gap:5px;padding:0 10px;background:var(--concrete-light);border-bottom:1px solid var(--concrete-line)"><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="margin-left:8px;padding:2px 8px;background:#fff;border-radius:3px;font-size:10px;color:var(--concrete);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">authersbuildinggroup.com</span></div>
+          <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ false }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="" poster="assets/shot-authers.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="Authers Building Group website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ true }}" hint-placeholder-val="{{ true }}"><img src="assets/shot-authers.jpg" alt="Authers Building Group website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-weight:800;font-size:17px">Authers Building Group</span>
+          <span style="font-size:14px;color:#C9C4BC">General Contractor</span>
+        </div>
+      </a>
+    
+      <a href="https://southlandcompany.net/" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#fff;transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="text-decoration:none;color:#fff;transform:translateY(-4px)">
+        <div style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 24px 44px -26px rgba(0,0,0,.7)">
+          <div style="height:26px;flex:none;display:flex;align-items:center;gap:5px;padding:0 10px;background:var(--concrete-light);border-bottom:1px solid var(--concrete-line)"><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="margin-left:8px;padding:2px 8px;background:#fff;border-radius:3px;font-size:10px;color:var(--concrete);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">southlandcompany.net</span></div>
+          <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ true }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="assets/southland-hero.mp4" poster="assets/southland-poster.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="Southland Stucco and Masonry website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ false }}" hint-placeholder-val="{{ true }}"><img src="assets/southland-poster.jpg" alt="Southland Stucco and Masonry website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-weight:800;font-size:17px">Southland Stucco and Masonry</span>
+          <span style="font-size:14px;color:#C9C4BC">Stucco and Masonry Contractor</span>
+        </div>
+      </a>
+    
+      <a href="https://stallioncommunications.com/" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#fff;transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="text-decoration:none;color:#fff;transform:translateY(-4px)">
+        <div style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 24px 44px -26px rgba(0,0,0,.7)">
+          <div style="height:26px;flex:none;display:flex;align-items:center;gap:5px;padding:0 10px;background:var(--concrete-light);border-bottom:1px solid var(--concrete-line)"><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="margin-left:8px;padding:2px 8px;background:#fff;border-radius:3px;font-size:10px;color:var(--concrete);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">stallioncommunications.com</span></div>
+          <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ true }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="assets/stallion-hero.mp4" poster="assets/stallion-poster.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="Stallion Communications website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ false }}" hint-placeholder-val="{{ true }}"><img src="assets/stallion-poster.jpg" alt="Stallion Communications website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-weight:800;font-size:17px">Stallion Communications</span>
+          <span style="font-size:14px;color:#C9C4BC">Low-voltage and Communications</span>
+        </div>
+      </a>
+    
+      <a href="https://ramparttx.com/" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#fff;transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="text-decoration:none;color:#fff;transform:translateY(-4px)">
+        <div style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 24px 44px -26px rgba(0,0,0,.7)">
+          <div style="height:26px;flex:none;display:flex;align-items:center;gap:5px;padding:0 10px;background:var(--concrete-light);border-bottom:1px solid var(--concrete-line)"><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="margin-left:8px;padding:2px 8px;background:#fff;border-radius:3px;font-size:10px;color:var(--concrete);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">ramparttx.com</span></div>
+          <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ true }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="assets/rampart-hero.mp4" poster="assets/rampart-poster.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="Rampart General Contractors website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ false }}" hint-placeholder-val="{{ true }}"><img src="assets/rampart-poster.jpg" alt="Rampart General Contractors website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-weight:800;font-size:17px">Rampart General Contractors</span>
+          <span style="font-size:14px;color:#C9C4BC">General Contractor</span>
+        </div>
+      </a>
+    
+      <a href="https://spoorelectric.com/" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#fff;transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="text-decoration:none;color:#fff;transform:translateY(-4px)">
+        <div style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 24px 44px -26px rgba(0,0,0,.7)">
+          <div style="height:26px;flex:none;display:flex;align-items:center;gap:5px;padding:0 10px;background:var(--concrete-light);border-bottom:1px solid var(--concrete-line)"><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="margin-left:8px;padding:2px 8px;background:#fff;border-radius:3px;font-size:10px;color:var(--concrete);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">spoorelectric.com</span></div>
+          <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ false }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="" poster="assets/shot-spoor.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="Spoor Electric website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ true }}" hint-placeholder-val="{{ true }}"><img src="assets/shot-spoor.jpg" alt="Spoor Electric website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-weight:800;font-size:17px">Spoor Electric</span>
+          <span style="font-size:14px;color:#C9C4BC">Electrical Contractor</span>
+        </div>
+      </a>
+    
+      <a href="https://centerpoint-is.com/" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#fff;transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="text-decoration:none;color:#fff;transform:translateY(-4px)">
+        <div style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 24px 44px -26px rgba(0,0,0,.7)">
+          <div style="height:26px;flex:none;display:flex;align-items:center;gap:5px;padding:0 10px;background:var(--concrete-light);border-bottom:1px solid var(--concrete-line)"><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="margin-left:8px;padding:2px 8px;background:#fff;border-radius:3px;font-size:10px;color:var(--concrete);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">centerpoint-is.com</span></div>
+          <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ false }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="" poster="assets/shot-centerpoint.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="CenterPoint Integrated Solutions website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ true }}" hint-placeholder-val="{{ true }}"><img src="assets/shot-centerpoint.jpg" alt="CenterPoint Integrated Solutions website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-weight:800;font-size:17px">CenterPoint Integrated Solutions</span>
+          <span style="font-size:14px;color:#C9C4BC">Metro District Development and Civil Engineering. Colorado.</span>
+        </div>
+      </a>
+    
+      <a href="https://idesllc.com/" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#fff;transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="text-decoration:none;color:#fff;transform:translateY(-4px)">
+        <div style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 24px 44px -26px rgba(0,0,0,.7)">
+          <div style="height:26px;flex:none;display:flex;align-items:center;gap:5px;padding:0 10px;background:var(--concrete-light);border-bottom:1px solid var(--concrete-line)"><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="margin-left:8px;padding:2px 8px;background:#fff;border-radius:3px;font-size:10px;color:var(--concrete);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">idesllc.com</span></div>
+          <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ false }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="" poster="assets/shot-ides.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="Independent District Engineering Services website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ true }}" hint-placeholder-val="{{ true }}"><img src="assets/shot-ides.jpg" alt="Independent District Engineering Services website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-weight:800;font-size:17px">Independent District Engineering Services</span>
+          <span style="font-size:14px;color:#C9C4BC">Metro District Engineering for Colorado and Utah.</span>
+        </div>
+      </a>
+    
+      <a href="https://swapllc.com/" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#fff;transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="text-decoration:none;color:#fff;transform:translateY(-4px)">
+        <div style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 24px 44px -26px rgba(0,0,0,.7)">
+          <div style="height:26px;flex:none;display:flex;align-items:center;gap:5px;padding:0 10px;background:var(--concrete-light);border-bottom:1px solid var(--concrete-line)"><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="margin-left:8px;padding:2px 8px;background:#fff;border-radius:3px;font-size:10px;color:var(--concrete);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">swapllc.com</span></div>
+          <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ true }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="assets/swap-hero.mp4" poster="assets/swap-poster.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="SWAP LLC website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ false }}" hint-placeholder-val="{{ true }}"><img src="assets/swap-poster.jpg" alt="SWAP LLC website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-weight:800;font-size:17px">SWAP LLC</span>
+          <span style="font-size:14px;color:#C9C4BC">Metro District Services for Colorado and Utah.</span>
+        </div>
+      </a>
+    
+      <a href="https://southlandsandandgravel.net/" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#fff;transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="text-decoration:none;color:#fff;transform:translateY(-4px)">
+        <div style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 24px 44px -26px rgba(0,0,0,.7)">
+          <div style="height:26px;flex:none;display:flex;align-items:center;gap:5px;padding:0 10px;background:var(--concrete-light);border-bottom:1px solid var(--concrete-line)"><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="margin-left:8px;padding:2px 8px;background:#fff;border-radius:3px;font-size:10px;color:var(--concrete);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">southlandsandandgravel.net</span></div>
+          <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ false }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="" poster="assets/shot-southland-sg.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="Southland Sand and Gravel website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ true }}" hint-placeholder-val="{{ true }}"><img src="assets/shot-southland-sg.jpg" alt="Southland Sand and Gravel website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-weight:800;font-size:17px">Southland Sand and Gravel</span>
+          <span style="font-size:14px;color:#C9C4BC">Aggregates and Delivery</span>
+        </div>
+      </a>
+    
+      <a href="https://rhinotx.com/" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#fff;transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="text-decoration:none;color:#fff;transform:translateY(-4px)">
+        <div style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 24px 44px -26px rgba(0,0,0,.7)">
+          <div style="height:26px;flex:none;display:flex;align-items:center;gap:5px;padding:0 10px;background:var(--concrete-light);border-bottom:1px solid var(--concrete-line)"><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="margin-left:8px;padding:2px 8px;background:#fff;border-radius:3px;font-size:10px;color:var(--concrete);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">rhinotx.com</span></div>
+          <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ false }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="" poster="assets/rhino-home-v2.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="Rhino Property Improvements website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ true }}" hint-placeholder-val="{{ true }}"><img src="assets/rhino-home-v2.jpg" alt="Rhino Property Improvements website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-weight:800;font-size:17px">Rhino Property Improvements</span>
+          <span style="font-size:14px;color:#C9C4BC">Concrete and Asphalt Contractor</span>
+        </div>
+      </a>
+    
+      <a href="https://lvamayanstucco.com/" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#fff;transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="text-decoration:none;color:#fff;transform:translateY(-4px)">
+        <div style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 24px 44px -26px rgba(0,0,0,.7)">
+          <div style="height:26px;flex:none;display:flex;align-items:center;gap:5px;padding:0 10px;background:var(--concrete-light);border-bottom:1px solid var(--concrete-line)"><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="margin-left:8px;padding:2px 8px;background:#fff;border-radius:3px;font-size:10px;color:var(--concrete);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">lvamayanstucco.com</span></div>
+          <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ false }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="" poster="assets/lva-home.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="LVA Mayan Stucco website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ true }}" hint-placeholder-val="{{ true }}"><img src="assets/lva-home.jpg" alt="LVA Mayan Stucco website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-weight:800;font-size:17px">LVA Mayan Stucco</span>
+          <span style="font-size:14px;color:#C9C4BC">Stucco Contractor</span>
+        </div>
+      </a>
+    
+      <a href="https://viterrastone.com/" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#fff;transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="text-decoration:none;color:#fff;transform:translateY(-4px)">
+        <div style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 24px 44px -26px rgba(0,0,0,.7)">
+          <div style="height:26px;flex:none;display:flex;align-items:center;gap:5px;padding:0 10px;background:var(--concrete-light);border-bottom:1px solid var(--concrete-line)"><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="width:8px;height:8px;border-radius:50%;background:#CFC9C0"></span><span style="margin-left:8px;padding:2px 8px;background:#fff;border-radius:3px;font-size:10px;color:var(--concrete);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">viterrastone.com</span></div>
+          <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ false }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="" poster="assets/shot-viterra.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="Viterra Stone website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ true }}" hint-placeholder-val="{{ true }}"><img src="assets/shot-viterra.jpg" alt="Viterra Stone website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-weight:800;font-size:17px">Viterra Stone</span>
+          <span style="font-size:14px;color:#C9C4BC">Cast Stone and Natural Stone Fabricator</span>
+        </div>
+      </a>
+    
+  </div>
+</div>
+</section>
+
+
+
+<section data-screen-label="Every site includes" style="max-width:1280px;margin:0 auto;padding:clamp(56px,8vw,112px) clamp(20px,4vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:40px clamp(40px,6vw,96px);align-items:stretch">
+  <div style="display:flex;flex-direction:column;gap:14px">
+    <div style="font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:22px;color:var(--brand);text-transform:uppercase">Every website includes</div>
+    <h2 style="margin:0;font-family:var(--f-head);font-weight:800;font-size:clamp(32px,3.6vw,48px);line-height:1.08;letter-spacing:-.02em;text-wrap:balance">It's yours. All of it.</h2>
+    <p style="margin:0;font-size:18px;line-height:1.6;color:#45423E;text-wrap:pretty">You own every asset we create. When you move from your current site, we handle the transition with zero downtime.</p>
+    <div style="margin-top:14px;flex:1;background:var(--dark);color:#fff;border-radius:6px;padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;justify-content:space-between;gap:18px;box-shadow:0 24px 48px -28px rgba(27,37,49,.45)">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.16)">
+        <span style="font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:20px;color:var(--brand-light)">What you own</span>
+        <span style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--brand);padding:4px 10px;border-radius:3px">Owner: You</span>
+      </div>
+      <div style="display:flex;flex-direction:column;justify-content:space-evenly;gap:12px;flex:1">
+        <div style="display:flex;align-items:center;gap:14px;font-size:17px;font-weight:600"><span style="width:22px;height:22px;flex:none;border-radius:50%;border:2px solid var(--brand-light);display:grid;place-items:center"><span style="width:8px;height:8px;border-radius:50%;background:var(--brand-light)"></span></span>Your domain</div>
+        <div style="display:flex;align-items:center;gap:14px;font-size:17px;font-weight:600"><span style="width:22px;height:22px;flex:none;border-radius:50%;border:2px solid var(--brand-light);display:grid;place-items:center"><span style="width:8px;height:8px;border-radius:50%;background:var(--brand-light)"></span></span>Your website and every page</div>
+        <div style="display:flex;align-items:center;gap:14px;font-size:17px;font-weight:600"><span style="width:22px;height:22px;flex:none;border-radius:50%;border:2px solid var(--brand-light);display:grid;place-items:center"><span style="width:8px;height:8px;border-radius:50%;background:var(--brand-light)"></span></span>Your photos, logo, and copy</div>
+        <div style="display:flex;align-items:center;gap:14px;font-size:17px;font-weight:600"><span style="width:22px;height:22px;flex:none;border-radius:50%;border:2px solid var(--brand-light);display:grid;place-items:center"><span style="width:8px;height:8px;border-radius:50%;background:var(--brand-light)"></span></span>Your logins and admin access</div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.16)">
+        <span style="font-size:14px;color:#C9C4BC;line-height:1.5">No lock-in. No hostage files.<br>If you ever leave, it all goes with you.</span>
+        <span style="font-family:var(--f-head);font-weight:800;font-size:22px;color:#fff;white-space:nowrap">100% yours</span>
+      </div>
+    </div>
+  </div>
+  <ul style="list-style:none;margin:0;padding:clamp(8px,1.5vw,16px) clamp(24px,3vw,36px);display:flex;flex-direction:column;justify-content:space-evenly;background:#fff;border:1px solid var(--concrete-line);border-radius:8px">
+    
+      <li style="display:flex;flex-direction:column;gap:6px;padding:22px 0;border-bottom:1px solid var(--concrete-light);flex:1;justify-content:center">
+        <span style="display:flex;gap:12px;align-items:center;font-weight:700;font-size:18px;line-height:1.3"><span aria-hidden="true" style="width:22px;height:22px;flex:none;border-radius:50%;background:var(--brand-tint);display:grid;place-items:center"><span style="width:5px;height:10px;border:solid var(--brand);border-width:0 2px 2px 0;transform:translateY(-1px) rotate(45deg)"></span></span>Professional copywriting</span>
+        <span style="font-size:15px;line-height:1.55;color:#55524D;padding-left:34px">We learn your history, your people, and the work you are proud of, then write every page.</span>
+      </li>
+    
+      <li style="display:flex;flex-direction:column;gap:6px;padding:22px 0;border-bottom:1px solid var(--concrete-light);flex:1;justify-content:center">
+        <span style="display:flex;gap:12px;align-items:center;font-weight:700;font-size:18px;line-height:1.3"><span aria-hidden="true" style="width:22px;height:22px;flex:none;border-radius:50%;background:var(--brand-tint);display:grid;place-items:center"><span style="width:5px;height:10px;border:solid var(--brand);border-width:0 2px 2px 0;transform:translateY(-1px) rotate(45deg)"></span></span>Responsive on every device</span>
+        <span style="font-size:15px;line-height:1.55;color:#55524D;padding-left:34px">Designed on desktop, then tuned for phones and tablets, so it looks right in the office and on the jobsite.</span>
+      </li>
+    
+      <li style="display:flex;flex-direction:column;gap:6px;padding:22px 0;border-bottom:1px solid var(--concrete-light);flex:1;justify-content:center">
+        <span style="display:flex;gap:12px;align-items:center;font-weight:700;font-size:18px;line-height:1.3"><span aria-hidden="true" style="width:22px;height:22px;flex:none;border-radius:50%;background:var(--brand-tint);display:grid;place-items:center"><span style="width:5px;height:10px;border:solid var(--brand);border-width:0 2px 2px 0;transform:translateY(-1px) rotate(45deg)"></span></span>Full ownership</span>
+        <span style="font-size:15px;line-height:1.55;color:#55524D;padding-left:34px">Every page, photo, and file we create belongs to you.</span>
+      </li>
+    
+      <li style="display:flex;flex-direction:column;gap:6px;padding:22px 0;border-bottom:1px solid var(--concrete-light);flex:1;justify-content:center">
+        <span style="display:flex;gap:12px;align-items:center;font-weight:700;font-size:18px;line-height:1.3"><span aria-hidden="true" style="width:22px;height:22px;flex:none;border-radius:50%;background:var(--brand-tint);display:grid;place-items:center"><span style="width:5px;height:10px;border:solid var(--brand);border-width:0 2px 2px 0;transform:translateY(-1px) rotate(45deg)"></span></span>Zero-downtime transition</span>
+        <span style="font-size:15px;line-height:1.55;color:#55524D;padding-left:34px">Your current site stays live until the new one is ready.</span>
+      </li>
+    
+      <li style="display:flex;flex-direction:column;gap:6px;padding:22px 0;border-bottom:1px solid var(--concrete-light);flex:1;justify-content:center">
+        <span style="display:flex;gap:12px;align-items:center;font-weight:700;font-size:18px;line-height:1.3"><span aria-hidden="true" style="width:22px;height:22px;flex:none;border-radius:50%;background:var(--brand-tint);display:grid;place-items:center"><span style="width:5px;height:10px;border:solid var(--brand);border-width:0 2px 2px 0;transform:translateY(-1px) rotate(45deg)"></span></span>Care plans that keep it current</span>
+        <span style="font-size:15px;line-height:1.55;color:#55524D;padding-left:34px">Hosting, backups, security, and monthly edits handled by our team.</span>
+      </li>
+    
+  </ul>
+</section>
+
+<section data-screen-label="Recruiting band" style="position:relative;background:var(--dark);color:#fff;overflow:hidden">
+  <div style="position:absolute;inset:0;opacity:.55">
+    <image-slot id="web-band-truck" shape="rect" src="assets/ssg-truck-503-web.jpg" placeholder="Southland Sand and Gravel truck photo"></image-slot>
+  </div>
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,26,34,.92) 0%,rgba(20,26,34,.7) 55%,rgba(20,26,34,.2) 100%);pointer-events:none"></div>
+  <div style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(72px,10vw,140px) clamp(20px,4vw,48px);display:flex;flex-direction:column;gap:24px;pointer-events:none">
+    <div style="font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:22px;color:var(--brand-light);text-transform:uppercase">Recruiting</div>
+    <h2 style="margin:0;font-family:var(--f-head);font-weight:800;font-size:clamp(34px,4.6vw,60px);line-height:1.05;letter-spacing:-.025em;max-width:820px;text-wrap:balance">Good people want to work for companies they're proud of.</h2>
+    <p style="margin:0;font-size:clamp(17px,1.5vw,20px);line-height:1.6;max-width:600px;color:#E4E0DA;text-wrap:pretty">A strong website shows skilled tradespeople your work, your crews, and your culture before they ever apply. It's one of the best recruiting tools you have.</p>
+  </div>
+</section>
+
+<sc-if value="{{ true }}" hint-placeholder-val="{{ true }}">
+<section id="pricing" data-screen-label="Pricing" style="background:#fff;border-top:1px solid var(--concrete-line);border-bottom:1px solid var(--concrete-line)">
+  <div style="max-width:1120px;margin:0 auto;padding:clamp(56px,8vw,112px) clamp(20px,4vw,48px);display:flex;flex-direction:column;gap:clamp(40px,5vw,56px)">
+    <div style="display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center">
+      <sc-if value="{{ false }}" hint-placeholder-val="{{ true }}">
+        <span style="font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.06em;color:#fff;background:var(--dark);padding:5px 10px;border-radius:3px">DRAFT · HIDDEN UNTIL APPROVED</span>
+      </sc-if>
+      <div style="font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:22px;color:var(--brand);text-transform:uppercase">Pricing</div>
+      <h2 style="margin:0;font-family:var(--f-head);font-weight:800;font-size:clamp(34px,4.4vw,56px);line-height:1.05;letter-spacing:-.025em;text-wrap:balance">Simple pricing. <span style="color:var(--brand)">No surprises.</span></h2>
+      <p style="margin:0;font-size:18px;line-height:1.6;color:#45423E;max-width:640px;text-wrap:pretty">Every website includes professional copywriting, responsive design for every device, and full ownership of everything we create.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px;align-items:stretch">
+      <article style="background:#fff;border:2px solid var(--brand);border-radius:8px;display:flex;flex-direction:column;box-shadow:0 24px 48px -28px rgba(27,37,49,.35);position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease" style-hover="transform:translateY(-6px);box-shadow:0 40px 70px -34px color-mix(in srgb, var(--brand-deep) 50%, transparent)">
+        <span aria-hidden="true" style="position:absolute;left:0;right:0;top:0;height:6px;background:repeating-linear-gradient(45deg,var(--brand) 0 10px,var(--brand-deep) 10px 20px);border-radius:6px 6px 0 0"></span>
+        <sc-if value="{{ showPopularOff }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute;top:-14px;left:clamp(24px,3vw,40px);background:var(--brand);color:#fff;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:3px;white-space:nowrap">Most popular</div>
+        </sc-if>
+        <div style="position:relative;padding:clamp(32px,3.4vw,44px) clamp(28px,3vw,40px) clamp(28px,3vw,40px);display:flex;flex-direction:column;gap:14px;border-bottom:1px solid var(--concrete-light);background:linear-gradient(180deg,var(--brand-tint) 0%,#fff 100%)">
+          <span aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(color-mix(in srgb, var(--brand) 10%, transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb, var(--brand) 10%, transparent) 1px,transparent 1px);background-size:24px 24px;-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,transparent 100%);pointer-events:none"></span>
+          <div style="position:relative;font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:22px;color:var(--brand);text-transform:uppercase">Foundation Website</div>
+          <p style="position:relative;margin:0;font-size:16px;line-height:1.55;color:#45423E;min-height:50px">Fast, modern, informational website on a hosted platform.</p>
+          <div style="position:relative;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--concrete)">Starting at</span>
+            <span style="font-family:var(--f-head);font-weight:800;font-size:clamp(50px,5.6vw,68px);line-height:1;letter-spacing:-.035em">$2,999</span>
+          </div>
+        </div>
+        <ul style="list-style:none;margin:0;padding:clamp(24px,3vw,32px) clamp(28px,3vw,40px);display:flex;flex-direction:column;gap:12px;flex:1">
+          
+            <li style="display:flex;gap:12px;align-items:baseline;font-size:16px;font-weight:600;line-height:1.45"><span style="width:8px;height:8px;background:var(--brand);flex:none;transform:translateY(-2px)"></span>5 custom pages</li>
+          
+            <li style="display:flex;gap:12px;align-items:baseline;font-size:16px;font-weight:600;line-height:1.45"><span style="width:8px;height:8px;background:var(--brand);flex:none;transform:translateY(-2px)"></span>Copywriting included</li>
+          
+            <li style="display:flex;gap:12px;align-items:baseline;font-size:16px;font-weight:600;line-height:1.45"><span style="width:8px;height:8px;background:var(--brand);flex:none;transform:translateY(-2px)"></span>Responsive on phone, tablet, and desktop</li>
+          
+            <li style="display:flex;gap:12px;align-items:baseline;font-size:16px;font-weight:600;line-height:1.45"><span style="width:8px;height:8px;background:var(--brand);flex:none;transform:translateY(-2px)"></span>You own every asset we create</li>
+          
+            <li style="display:flex;gap:12px;align-items:baseline;font-size:16px;font-weight:600;line-height:1.45"><span style="width:8px;height:8px;background:var(--brand);flex:none;transform:translateY(-2px)"></span>Zero downtime transition from your current site</li>
+          
+        </ul>
+        <div style="margin:0 clamp(16px,2vw,24px) clamp(16px,2vw,24px);background:var(--brand-tint);border-radius:4px;padding:20px 22px;display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+            <span style="font-weight:800;font-size:16px">Care Plan</span>
+            <span style="font-size:14px;color:#45423E"><strong style="font-family:var(--f-head);font-size:26px;font-weight:800;color:var(--ink);letter-spacing:-.02em">$99</strong><span style="font-weight:700;color:var(--ink)">/mo</span></span>
+          </div>
+          <p style="margin:0;font-size:14px;line-height:1.55;color:#45423E">Includes 5 edits per month, hosting, backups, security, and fixes.</p>
+          <p style="margin:0;font-size:13px;color:var(--brand-deep);font-weight:600">Or $990/yr paid annually, two months free.</p>
+        </div>
+        <div style="padding:0 clamp(16px,2vw,24px) clamp(16px,2vw,24px)">
+          <a href="https://meetings-na2.hubspot.com/joshua40" target="_blank" rel="noopener" style="display:block;background:var(--brand);color:#fff;font-weight:700;font-size:16px;padding:16px;border-radius:4px;text-align:center;text-decoration:none" style-hover="background:var(--brand-deep);color:#fff;text-decoration:none">Book a call</a>
+        </div>
+      </article>
+
+      <article style="background:#fff;border:1px solid var(--concrete-line);border-radius:8px;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease, border-color .35s ease" style-hover="transform:translateY(-6px);border-color:var(--navy);box-shadow:0 40px 70px -34px rgba(27,37,49,.45)">
+        <span aria-hidden="true" style="position:absolute;left:0;right:0;top:0;height:6px;background:repeating-linear-gradient(45deg,var(--navy) 0 10px,var(--dark) 10px 20px);border-radius:6px 6px 0 0"></span>
+        <div style="position:relative;padding:clamp(32px,3.4vw,44px) clamp(28px,3vw,40px) clamp(28px,3vw,40px);display:flex;flex-direction:column;gap:14px;border-bottom:1px solid var(--concrete-light);background:linear-gradient(180deg,var(--concrete-light) 0%,#fff 100%)">
+          <span aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(rgba(36,52,74,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(36,52,74,.09) 1px,transparent 1px);background-size:24px 24px;-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,transparent 100%);pointer-events:none"></span>
+          <div style="position:relative;font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:22px;color:var(--navy);text-transform:uppercase">Premier Website (WordPress)</div>
+          <p style="position:relative;margin:0;font-size:16px;line-height:1.55;color:#45423E;min-height:50px">Built on WordPress, so your team can edit it anytime.</p>
+          <div style="position:relative;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--concrete)">Starting at</span>
+            <span style="font-family:var(--f-head);font-weight:800;font-size:clamp(50px,5.6vw,68px);line-height:1;letter-spacing:-.035em">$5,999</span>
+          </div>
+        </div>
+        <ul style="list-style:none;margin:0;padding:clamp(24px,3vw,32px) clamp(28px,3vw,40px);display:flex;flex-direction:column;gap:12px;flex:1">
+          
+            <li style="display:flex;gap:12px;align-items:baseline;font-size:16px;font-weight:600;line-height:1.45"><span style="width:8px;height:8px;background:var(--navy);flex:none;transform:translateY(-2px)"></span>5 custom pages</li>
+          
+            <li style="display:flex;gap:12px;align-items:baseline;font-size:16px;font-weight:600;line-height:1.45"><span style="width:8px;height:8px;background:var(--navy);flex:none;transform:translateY(-2px)"></span>Copywriting included</li>
+          
+            <li style="display:flex;gap:12px;align-items:baseline;font-size:16px;font-weight:600;line-height:1.45"><span style="width:8px;height:8px;background:var(--navy);flex:none;transform:translateY(-2px)"></span>Edit it yourself whenever you want</li>
+          
+            <li style="display:flex;gap:12px;align-items:baseline;font-size:16px;font-weight:600;line-height:1.45"><span style="width:8px;height:8px;background:var(--navy);flex:none;transform:translateY(-2px)"></span>You own every asset we create</li>
+          
+            <li style="display:flex;gap:12px;align-items:baseline;font-size:16px;font-weight:600;line-height:1.45"><span style="width:8px;height:8px;background:var(--navy);flex:none;transform:translateY(-2px)"></span>Zero downtime transition from your current site</li>
+          
+        </ul>
+        <div style="margin:0 clamp(16px,2vw,24px) clamp(16px,2vw,24px);background:var(--concrete-light);border-radius:4px;padding:20px 22px;display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+            <span style="font-weight:800;font-size:16px">Care Plan</span>
+            <span style="font-size:14px;color:#45423E"><strong style="font-family:var(--f-head);font-size:26px;font-weight:800;color:var(--ink);letter-spacing:-.02em">$199</strong><span style="font-weight:700;color:var(--ink)">/mo</span></span>
+          </div>
+          <p style="margin:0;font-size:14px;line-height:1.55;color:#45423E">Includes 10 edits per month, hosting, backups, security, updates, and fixes.</p>
+          <p style="margin:0;font-size:13px;color:var(--navy);font-weight:600">Or $1,990/yr paid annually, two months free.</p>
+        </div>
+        <div style="padding:0 clamp(16px,2vw,24px) clamp(16px,2vw,24px)">
+          <a href="https://meetings-na2.hubspot.com/joshua40" target="_blank" rel="noopener" style="display:block;background:transparent;color:var(--ink);border:1.5px solid var(--ink);font-weight:700;font-size:16px;padding:15px;border-radius:4px;text-align:center;text-decoration:none" style-hover="background:var(--ink);color:#fff;text-decoration:none">Book a call</a>
+        </div>
+      </article>
+    </div>
+
+    <div style="background:var(--paper);border:1px solid var(--concrete-line);border-radius:8px;padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;gap:20px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 20px">
+        <span style="font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:24px;text-transform:uppercase;color:var(--brand)">Add-ons and savings</span>
+        <span style="font-size:15px;color:#55524D">Add what you need, when you need it.</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:14px">
+        <div style="background:#fff;border:1px solid var(--concrete-line);border-radius:6px;padding:24px;display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--concrete)">Additional pages</span>
+          <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap"><span style="font-family:var(--f-head);font-weight:800;font-size:clamp(30px,3vw,38px);line-height:1;letter-spacing:-.02em">$299</span><span style="font-size:15px;font-weight:700;color:#55524D">each</span></div>
+          <span style="font-size:15px;line-height:1.5;color:#45423E">Foundation. $399 each on Premier.</span>
+        </div>
+        <div style="background:#fff;border:1px solid var(--concrete-line);border-radius:6px;padding:24px;display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--concrete)">Rush launch</span>
+          <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap"><span style="font-family:var(--f-head);font-weight:800;font-size:clamp(30px,3vw,38px);line-height:1;letter-spacing:-.02em">$1,000</span><span style="font-size:15px;font-weight:700;color:#55524D">flat</span></div>
+          <span style="font-size:15px;line-height:1.5;color:#45423E">Live within one week.</span>
+        </div>
+        <div style="background:var(--dark);color:#fff;border-radius:6px;padding:24px;display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-light)">Care Plan savings</span>
+          <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap"><span style="font-family:var(--f-head);font-weight:800;font-size:clamp(30px,3vw,38px);line-height:1;letter-spacing:-.02em">2 months</span><span style="font-size:15px;font-weight:700;color:#E4E0DA">free</span></div>
+          <span style="font-size:15px;line-height:1.5;color:#E4E0DA">When you pay for your Foundation or Premier Care Plan yearly.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</sc-if>
+
+<section id="call" data-screen-label="Closing" style="max-width:1280px;margin:0 auto;padding:clamp(56px,8vw,112px) clamp(20px,4vw,48px)">
+  <div style="background:var(--dark);color:#fff;border-radius:6px;padding:clamp(40px,6vw,80px) clamp(24px,5vw,72px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px;border-top:4px solid var(--brand)">
+    <div style="font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:22px;color:var(--brand-light);text-transform:uppercase">Let's find your fit</div>
+    <h2 style="margin:0;font-family:var(--f-head);font-weight:800;font-size:clamp(30px,3.6vw,48px);line-height:1.08;letter-spacing:-.02em;text-wrap:balance;max-width:760px">Not sure which fits? We'll help you choose the right one.</h2>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px">
+      <a href="contact.html" style="background:var(--brand);color:#fff;font-weight:700;font-size:17px;padding:17px 30px;border-radius:4px;text-decoration:none;white-space:nowrap" style-hover="background:var(--brand-deep);color:#fff;text-decoration:none">Start a conversation</a>
+      <a href="https://meetings-na2.hubspot.com/joshua40" target="_blank" rel="noopener" style="color:#fff;font-weight:700;font-size:17px;padding:16px 29px;border-radius:4px;border:1.5px solid rgba(255,255,255,.7);text-decoration:none;white-space:nowrap" style-hover="background:#fff;color:var(--ink);text-decoration:none">Book a call</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:var(--dark);color:#D9D5CE">
+  <div style="height:4px;background:linear-gradient(90deg,var(--navy) 0 50%,var(--brand) 50% 100%)"></div>
+  <div style="max-width:1280px;margin:0 auto;padding:36px clamp(20px,4vw,48px) 22px;display:flex;flex-direction:column;gap:30px">
+    <div style="padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.12)">
+      <span style="display:block;font-family:var(--f-head);font-weight:800;font-size:clamp(22px,2.4vw,30px);line-height:1.15;letter-spacing:-.02em;color:#fff;text-wrap:balance;max-width:900px">Automation handles the routine. <span style="color:var(--brand-soft)">People build the relationships.</span></span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:28px 40px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:14px;max-width:300px">
+        <img src="assets/usarem-logo-white.png" alt="USA-REM" style="height:30px;width:auto;max-width:100%;display:block;align-self:flex-start">
+        <p style="margin:0;font-size:14px;line-height:1.6">The website and systems partner for construction companies.</p>
+        <a href="https://www.linkedin.com/company/hardhatpartners" target="_blank" rel="noopener" aria-label="LinkedIn" style="align-self:flex-start;display:flex;align-items:center;gap:10px;color:#fff;font-size:14px;font-weight:700;text-decoration:none" style-hover="color:#fff;text-decoration:none"><span style="width:32px;height:32px;border-radius:4px;background:rgba(255,255,255,.1);display:grid;place-items:center;font-family:Arial,sans-serif;font-weight:800;font-size:15px;letter-spacing:-.02em">in</span>Follow us on LinkedIn</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:17px;color:var(--brand-soft);text-transform:uppercase">Explore</span>
+        <nav style="display:grid;grid-template-columns:repeat(2,max-content);gap:8px 28px;font-size:15px">
+          
+            <a href="index.html" style="color:#fff;text-decoration:none" style-hover="color:var(--brand-soft);text-decoration:none">Home</a>
+          
+            <a href="websites.html" style="color:#fff;text-decoration:none" style-hover="color:var(--brand-soft);text-decoration:none">Websites</a>
+          
+            <a href="systems.html" style="color:#fff;text-decoration:none" style-hover="color:var(--brand-soft);text-decoration:none">Systems</a>
+          
+            <a href="about.html" style="color:#fff;text-decoration:none" style-hover="color:var(--brand-soft);text-decoration:none">About</a>
+          
+            <a href="contact.html" style="color:#fff;text-decoration:none" style-hover="color:var(--brand-soft);text-decoration:none">Contact</a>
+          
+          <a href="websites.html#pricing" style="color:#fff;text-decoration:none" style-hover="color:var(--brand-soft);text-decoration:none">Pricing</a>
+        </nav>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:17px;color:var(--brand-soft);text-transform:uppercase">Get in touch</span>
+        <div style="display:flex;flex-direction:column;gap:8px;font-size:15px">
+          <a href="tel:2142076956" style="display:flex;gap:10px;color:#fff;text-decoration:none" style-hover="color:var(--brand-soft);text-decoration:none"><span style="width:44px;flex:none;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#A9A49C;padding-top:2px">Call</span>214.207.6956</a>
+          <a href="mailto:info@usa-rem.com" style="display:flex;gap:10px;color:#fff;text-decoration:none" style-hover="color:var(--brand-soft);text-decoration:none"><span style="width:44px;flex:none;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#A9A49C;padding-top:2px">Email</span>info@usa-rem.com</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 20px;border-top:1px solid rgba(255,255,255,.12);padding-top:16px;font-size:13px;color:#A9A49C">
+      <span style="white-space:nowrap">© USA-REM · TX Real Estate Marketing LLC</span>
+      <a href="privacy-policy.html" style="color:#D9D5CE">Privacy Policy and Terms of Use</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;typeset&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Open Sans + Bebas Neue (current)&quot;,&quot;Archivo + Barlow Condensed&quot;],&quot;default&quot;:&quot;Open Sans + Bebas Neue (current)&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Brand&quot;},&quot;showPricing&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Pricing&quot;},&quot;showDraftNote&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Pricing&quot;},&quot;showPopular&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Pricing&quot;}}">
+const THEMES = {
+  'Burnt orange (ideal)': { 'brand-light':'#D0652B', brand:'#B4531F', 'brand-deep':'#8E3F15', 'brand-tint':'#F2E4D8', dark:'#1B2531', navy:'#24344A' },
+  'Navy + red (current)': { 'brand-light':'#D9475A', brand:'#AD1528', 'brand-deep':'#8A1020', 'brand-tint':'#F4E1E3', dark:'#14264A', navy:'#203E75' }
+};
+const TYPE = {
+  'Open Sans + Bebas Neue (current)': { head:"'Open Sans',system-ui,sans-serif", body:"'Open Sans',system-ui,sans-serif", sub:"'Bebas Neue',Impact,sans-serif", track:'.05em' },
+  'Archivo + Barlow Condensed': { head:"'Archivo',system-ui,sans-serif", body:"'Open Sans',system-ui,sans-serif", sub:"'Barlow Condensed',sans-serif", track:'.08em' }
+};
+const PAGES = { Home:'index.html', Websites:'websites.html', Systems:'systems.html', About:'about.html', Contact:'contact.html' };
+const FEAT = ['5 custom pages','Copywriting included'];
+const TAIL = ['You own every asset we create','Zero downtime transition from your current site'];
+const SITE_MEDIA = {
+  'ramparttx.com': { name:'Rampart General Contractors', vid:'assets/rampart-hero.mp4', poster:'assets/rampart-poster.jpg' },
+  'southlandcompany.net': { name:'Southland Stucco and Masonry', vid:'assets/southland-hero.mp4', poster:'assets/southland-poster.jpg' },
+  'stallioncommunications.com': { name:'Stallion Communications', vid:'assets/stallion-hero.mp4', poster:'assets/stallion-poster.jpg' },
+  'swapllc.com': { name:'SWAP LLC', vid:'assets/swap-hero.mp4', poster:'assets/swap-poster.jpg' },
+  'smsbuildingproducts.com': { name:'SMS Building Products', img:'assets/shot-sms.jpg' },
+  'southlandsandandgravel.net': { name:'Southland Sand and Gravel', img:'assets/shot-southland-sg.jpg' },
+  'oscarordunoinc.com': { name:'Oscar Orduño, Inc.', img:'assets/shot-oscar.jpg' },
+  'authersbuildinggroup.com': { name:'Authers Building Group', img:'assets/shot-authers.jpg' },
+  'spoorelectric.com': { name:'Spoor Electric', img:'assets/shot-spoor.jpg' },
+  'rhinotx.com': { name:'Rhino Property Improvements', img:'assets/rhino-home-v2.jpg' },
+  'lvamayanstucco.com': { name:'LVA Mayan Stucco', img:'assets/lva-home.jpg' },
+  'centerpoint-is.com': { name:'CenterPoint Integrated Solutions', img:'assets/shot-centerpoint.jpg' },
+  'idesllc.com': { name:'Independent District Engineering Services', img:'assets/shot-ides.jpg' },
+  'viterrastone.com': { name:'Viterra Stone', img:'assets/shot-viterra.jpg' }
+};
+const siteMedia = (href, img, name) => {
+  const host = String(href || '').replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0];
+  const m = SITE_MEDIA[host] || {};
+  return { isVid: !!m.vid, isImg: !m.vid, vid: m.vid || '', img: m.poster || m.img || img || '', alt: (name || m.name || host) + ' website homepage' };
+};
+class Component extends DCLogic {
+  state = { w: typeof window !== 'undefined' ? Math.min(window.innerWidth, (window.screen && screen.width) || window.innerWidth) : 1280, menuOpen: false };
+  componentDidMount() {
+    this.onResize = () => this.setState({ w: Math.min(window.innerWidth, (window.screen && screen.width) || window.innerWidth) });
+    window.addEventListener('resize', this.onResize);
+    this.applyTheme();
+    this.mo = new MutationObserver(() => { cancelAnimationFrame(this.raf); this.raf = requestAnimationFrame(() => this.wireVideos()); });
+    this.mo.observe(document.body, { childList: true, subtree: true });
+    this.wireVideos();
+  }
+  componentDidUpdate() { this.applyTheme(); this.wireVideos(); }
+  componentWillUnmount() { window.removeEventListener('resize', this.onResize); this.io && this.io.disconnect(); this.mo && this.mo.disconnect(); }
+  wireVideos() {
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!this.io && !reduce && 'IntersectionObserver' in window) this.io = new IntersectionObserver(es => es.forEach(e => { const v = e.target; if (e.isIntersecting && e.intersectionRatio >= 0.5) { v.muted = true; const p = v.play(); if (p && p.catch) p.catch(() => {}); } else v.pause(); }), { threshold: [0, 0.5] });
+    document.querySelectorAll('video[data-loop]').forEach(v => {
+      if (v.__w) return; v.__w = 1;
+      v.muted = true; v.defaultMuted = true; v.loop = true; v.playsInline = true; v.controls = false;
+      if (reduce) { v.removeAttribute('src'); v.load(); return; }
+      if (this.io) this.io.observe(v);
+    });
+  }
+  applyTheme() {
+    const s = document.documentElement.style;
+    ['brand','brand-deep','brand-tint','brand-light','dark','navy'].forEach(k => s.removeProperty('--' + k));
+    document.documentElement.dataset.brand = (window.BRAND && window.BRAND.active) || 'hhp';
+    const f = TYPE[this.props.typeset] || TYPE['Open Sans + Bebas Neue (current)'];
+    s.setProperty('--f-head', f.head); s.setProperty('--f-body', f.body); s.setProperty('--f-sub', f.sub); s.setProperty('--sub-track', f.track);
+  }
+  renderVals() {
+    const isDesktop = this.state.w >= 700; const roomy = this.state.w >= 1080;
+    return {
+      brandName: (window.BRAND && window.BRAND.name) || 'Hard Hat Partners', brandLogo: (window.BRAND && window.BRAND.logo) || 'assets/hhp-logo-horizontal-color.png', brandLogoWhite: (window.BRAND && window.BRAND.logoWhite) || 'assets/hhp-logo-horizontal-reversed.png', linkedinUrl: (window.BRAND && window.BRAND.linkedin) || 'https://www.linkedin.com/company/hardhatpartners',
+      showPricing: this.props.showPricing ?? true,
+      showDraftNote: this.props.showDraftNote ?? false,
+      bookingUrl: (window.BRAND && window.BRAND.bookingUrl) || '#',
+      showPopular: this.props.showPopular ?? true,
+      isDesktop, isMobile: !isDesktop, showCta: this.state.w >= 980 || (!isDesktop && this.state.w >= 560), navGap: this.state.w >= 1180 ? '28px' : '16px', navSize: this.state.w >= 1180 ? '14px' : '13px',
+      menuOpen: !isDesktop && this.state.menuOpen,
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      nav: ['Home','Websites','Systems','About','Contact'].map(l => ({ label: l, href: PAGES[l] || '#', color: l === 'Websites' ? 'var(--brand)' : '#55524D', border: l === 'Websites' ? 'var(--brand)' : 'transparent' })),
+      heroDevOpacity: this.state.w >= 900 ? 1 : 0.28,
+      galleryCols: 'repeat(' + (roomy ? 3 : isDesktop ? 2 : 1) + ',minmax(0,1fr))',
+      gallery: [
+        { name:'Oscar Orduño, Inc.', trade:'Engineering', href:'https://oscarordunoinc.com/', label:'oscarordunoinc.com' },
+        { name:'Authers Building Group', trade:'General contractor', href:'https://authersbuildinggroup.com/', label:'authersbuildinggroup.com' },
+        { name:'Southland Stucco and Masonry', trade:'Stucco and masonry contractor', href:'https://southlandcompany.net/', label:'southlandcompany.net', img:'assets/southland-home.jpg' },
+        { name:'Stallion Communications', trade:'Low-voltage and communications', href:'https://stallioncommunications.com/', label:'stallioncommunications.com' },
+        { name:'Rampart General Contractors', trade:'General contractor', href:'https://ramparttx.com/', label:'ramparttx.com' },
+        { name:'Spoor Electric', trade:'Electrical contractor', href:'https://spoorelectric.com/', label:'spoorelectric.com' },
+        { name:'CenterPoint Integrated Solutions', trade:'Metro district development and civil engineering. Colorado.', href:'https://centerpoint-is.com/', label:'centerpoint-is.com' },
+        { name:'Independent District Engineering Services', trade:'Metro district engineering for Colorado and Utah.', href:'https://idesllc.com/', label:'idesllc.com' },
+        { name:'SWAP LLC', trade:'Metro district services for Colorado and Utah.', href:'https://swapllc.com/', label:'swapllc.com' },
+        { name:'Southland Sand and Gravel', trade:'Aggregates and delivery', href:'https://southlandsandandgravel.net/', label:'southlandsandandgravel.net' },
+        { name:'Rhino Property Improvements', trade:'Concrete and asphalt contractor', href:'https://rhinotx.com/', label:'rhinotx.com', img:'assets/rhino-home-v2.jpg' },
+        { name:'LVA Mayan Stucco', trade:'Stucco contractor', href:'https://lvamayanstucco.com/', label:'lvamayanstucco.com', img:'assets/lva-home.jpg' },
+        { name:'Viterra Stone', trade:'Cast stone and natural stone fabricator', href:'https://viterrastone.com/', label:'viterrastone.com', img:'assets/shot-viterra.jpg' }
+      ].map(s => ({ ...s, m: siteMedia(s.href, s.img, s.name), trade: s.trade.replace(/[A-Za-z][\w'-]*/g, (w, i) => (i > 0 && /^(and|or|for|of|the|in|on|to|a|an)$/i.test(w)) ? w.toLowerCase() : w.charAt(0).toUpperCase() + w.slice(1)) })),
+      audienceCols: this.state.w >= 900 ? 'repeat(3,minmax(0,1fr))' : 'minmax(0,1fr)',
+      audiences: [
+        { tag:'Before they sign', bg:'var(--dark)', stripeA:'var(--brand)', stripeB:'var(--brand-deep)', eyebrow:'var(--brand-light)', title:'Owners and developers', body:'They want proof you deliver on schedule and on budget, with work that looks like theirs.', img:'assets/southland-home.jpg', checks:['Projects','Schedule','Budget'] },
+        { tag:'Before they team up', bg:'var(--brand)', stripeA:'var(--dark)', stripeB:'var(--brand-deep)', eyebrow:'#fff', title:'Partners and contractors', body:'They want to know your scope, your capacity, and that you show up ready to work.', img:'assets/rhino-home-v2.jpg', checks:['Scope','Capacity','Safety'] },
+        { tag:'Before they apply', bg:'var(--navy)', stripeA:'var(--brand)', stripeB:'var(--brand-deep)', eyebrow:'var(--brand-light)', title:'Future hires', body:'Skilled people want to see the work, the crews, and the company they would be joining.', img:'assets/lva-home.jpg', checks:['Crews','Culture','Careers'] }
+      ],
+      includes: [
+        { title:'Professional copywriting', body:'We learn your history, your people, and the work you are proud of, then write every page.' },
+        { title:'Responsive on every device', body:'Designed on desktop, then tuned for phones and tablets, so it looks right in the office and on the jobsite.' },
+        { title:'Full ownership', body:'Every page, photo, and file we create belongs to you.' },
+        { title:'Zero-downtime transition', body:'Your current site stays live until the new one is ready.' },
+        { title:'Care plans that keep it current', body:'Hosting, backups, security, and monthly edits handled by our team.' }
+      ],
+      foundationFeatures: [...FEAT, 'Responsive on phone, tablet, and desktop', ...TAIL],
+      premierFeatures: [...FEAT, 'Edit it yourself whenever you want', ...TAIL]
+    };
+  }
+}
+</script>
+</body>
+</html>
