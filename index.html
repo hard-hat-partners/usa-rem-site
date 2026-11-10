@@ -475,6 +475,17 @@
           </div>
         </a>
       
+        <a href="https://jomarinc.com/" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:14px;text-decoration:none;color:var(--ink);transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="text-decoration:none;color:var(--ink);transform:translateY(-4px)">
+          <div style="display:flex;flex-direction:column;border:1px solid var(--concrete-line);border-radius:6px;overflow:hidden;background:#fff">
+            <div style="height:30px;flex:none;display:flex;align-items:center;gap:6px;padding:0 12px;background:var(--concrete-light);border-bottom:1px solid var(--concrete-line)"><span style="width:9px;height:9px;border-radius:50%;background:#CFC9C0"></span><span style="width:9px;height:9px;border-radius:50%;background:#CFC9C0"></span><span style="width:9px;height:9px;border-radius:50%;background:#CFC9C0"></span><span style="margin-left:10px;padding:3px 10px;background:#fff;border-radius:3px;font-size:11px;color:var(--concrete);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0">jomarinc.com</span></div>
+            <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ false }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="" poster="assets/shot-jomar.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="Jomar Electrical website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ true }}" hint-placeholder-val="{{ true }}"><img src="assets/shot-jomar.jpg" alt="Jomar Electrical website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <span style="font-weight:800;font-size:17px">Jomar Electrical</span>
+            <span style="font-size:14px;line-height:1.45;color:#5A5650">Family-owned electrical contractor since 1995. Houston, Austin, Midland, and Lubbock.</span>
+          </div>
+        </a>
+      
     </div>
     <a href="contact.html" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 40px;padding:clamp(28px,3vw,44px);border:1.5px dashed var(--concrete-line);border-radius:6px;background:#fff;text-decoration:none;color:var(--ink)" style-hover="border-color:var(--brand);text-decoration:none;color:var(--ink)">
       <span style="display:flex;flex-direction:column;gap:12px;min-width:0;flex:1 1 420px">
@@ -500,17 +511,6 @@
           <div style="display:flex;flex-direction:column;gap:4px">
             <span style="font-weight:800;font-size:17px">City Masonry</span>
             <span style="font-size:14px;line-height:1.45;color:#5A5650">Every wall we build holds something that matters.</span>
-          </div>
-        </div>
-      
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <div style="position:relative;border:1px solid var(--concrete-line);border-radius:6px;overflow:hidden;background:#fff">
-            <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)"><sc-if value="{{ false }}" hint-placeholder-val="{{ false }}"><video data-loop="1" src="" poster="assets/shot-jomar.jpg" muted="true" loop="true" playsinline="true" preload="none" aria-label="Jomar Electrical website homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></video></sc-if><sc-if value="{{ true }}" hint-placeholder-val="{{ true }}"><img src="assets/shot-jomar.jpg" alt="Jomar Electrical website homepage" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if></div>
-            <span style="position:absolute;top:12px;left:12px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--dark);padding:5px 9px;border-radius:3px">Coming soon</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:4px">
-            <span style="font-weight:800;font-size:17px">Jomar Electrical</span>
-            <span style="font-size:14px;line-height:1.45;color:#5A5650">30+ years of family-owned electrical, built safe.</span>
           </div>
         </div>
       
@@ -703,7 +703,8 @@ const SITE_MEDIA = {
   'lvamayanstucco.com': { name:'LVA Mayan Stucco', img:'assets/lva-home.jpg' },
   'centerpoint-is.com': { name:'CenterPoint Integrated Solutions', img:'assets/shot-centerpoint.jpg' },
   'idesllc.com': { name:'Independent District Engineering Services', img:'assets/shot-ides.jpg' },
-  'viterrastone.com': { name:'Viterra Stone', img:'assets/shot-viterra.jpg' }
+  'viterrastone.com': { name:'Viterra Stone', img:'assets/shot-viterra.jpg' },
+  'jomarinc.com': { name:'Jomar Electrical', img:'assets/shot-jomar.jpg' }
 };
 const siteMedia = (href, img, name) => {
   const host = String(href || '').replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0];
@@ -812,14 +813,14 @@ class Component extends DCLogic {
         { name:'Rampart General Contractors', label:'ramparttx.com', href:'https://ramparttx.com/', trade:'Multifamily general contractor, 100% employee owned. Houston, Austin, and DFW.' },
         { name:'Rhino Property Improvements', label:'rhinotx.com', href:'https://rhinotx.com/', trade:'Commercial concrete and asphalt. Southlake.' },
         { name:'LVA Mayan Stucco', label:'lvamayanstucco.com', href:'https://lvamayanstucco.com/', trade:'Woman-owned stucco, EIFS, and stone veneer. Dallas.' },
-        { name:'Viterra Stone', label:'viterrastone.com', href:'https://viterrastone.com/', trade:'Luxury cast stone, crafted by family.', img:'assets/shot-viterra.jpg' }
+        { name:'Viterra Stone', label:'viterrastone.com', href:'https://viterrastone.com/', trade:'Luxury cast stone, crafted by family.', img:'assets/shot-viterra.jpg' },
+        { name:'Jomar Electrical', label:'jomarinc.com', href:'https://jomarinc.com/', trade:'Family-owned electrical contractor since 1995. Houston, Austin, Midland, and Lubbock.', img:'assets/shot-jomar.jpg' }
       ].map(s => ({ ...s, m: siteMedia(s.href, s.img, s.name) })),
-      ...this.siteGrid(8),
+      ...this.siteGrid(9),
       whoCols: 'repeat(' + (this.state.w >= 900 ? 4 : this.state.w >= 520 ? 2 : 1) + ',minmax(0,1fr))',
       heroCols: this.state.w >= 1240 ? 'minmax(0,5fr) minmax(0,7fr)' : this.state.w >= 900 ? 'minmax(0,1fr) minmax(0,1fr)' : 'minmax(0,1fr)',
       coming: [
-        { name:'City Masonry', img:'assets/shot-citymasonry.jpg', line:'Every wall we build holds something that matters.' },
-        { name:'Jomar Electrical', img:'assets/shot-jomar.jpg', line:'30+ years of family-owned electrical, built safe.' }
+        { name:'City Masonry', img:'assets/shot-citymasonry.jpg', line:'Every wall we build holds something that matters.' }
       ].map(s => ({ ...s, m: siteMedia('', s.img, s.name) }))
     };
   }
