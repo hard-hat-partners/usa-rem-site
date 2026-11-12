@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-brand="usarem">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>We value your feedback | USA-REM</title>
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<link rel="stylesheet" href="./brand.css">
+<style>
+  body{min-height:100vh;display:flex;flex-direction:column}
+  header{background:#fff;border-bottom:1px solid var(--concrete-line)}
+  .bar{max-width:760px;margin:0 auto;padding:0 clamp(20px,4vw,32px);height:72px;display:flex;align-items:center}
+  .bar img{height:34px;width:auto;display:block}
+  main{flex:1;max-width:760px;width:100%;margin:0 auto;padding:clamp(28px,5vw,56px) clamp(20px,4vw,32px) 64px}
+  .eyebrow{font-family:var(--f-sub);letter-spacing:var(--sub-track);font-size:20px;color:var(--brand);text-transform:uppercase}
+  h1{margin:6px 0 10px;font-family:var(--f-head);font-weight:800;font-size:clamp(30px,4.4vw,44px);line-height:1.08;letter-spacing:-.025em;text-wrap:balance}
+  .lede{margin:0 0 26px;font-size:17px;line-height:1.6;color:#45423E}
+  .card{background:#fff;border:1px solid var(--concrete-line);border-radius:8px;padding:clamp(22px,3vw,34px);box-shadow:0 30px 60px -44px rgba(27,37,49,.5)}
+  .progress{height:6px;background:var(--concrete-light);border-radius:3px;overflow:hidden;margin-bottom:22px}
+  .progress span{display:block;height:100%;width:0;background:var(--brand);transition:width .25s}
+  .step[hidden]{display:none}
+  .q{margin:0 0 6px;font-family:var(--f-head);font-weight:800;font-size:clamp(21px,2.6vw,26px);line-height:1.2;letter-spacing:-.015em}
+  .hint{margin:0 0 18px;font-size:15px;color:var(--concrete)}
+  label.f{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:700;margin-bottom:14px}
+  input[type=text],textarea{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1px solid var(--concrete-line);border-radius:4px;background:#fff;color:var(--ink)}
+  textarea{min-height:130px;resize:vertical}
+  input:focus-visible,textarea:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid var(--brand-soft);outline-offset:2px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{font:inherit;font-size:16px;font-weight:600;padding:11px 18px;min-height:48px;min-width:48px;border-radius:4px;cursor:pointer;border:1.5px solid var(--concrete-line);background:#fff;color:var(--ink)}
+  .chip[aria-pressed=true]{background:var(--brand);border-color:var(--brand);color:#fff}
+  .row{margin-bottom:18px}
+  .row b{display:block;font-size:15px;margin-bottom:8px}
+  .scale{display:flex;justify-content:space-between;font-size:13px;color:var(--concrete);margin-top:6px}
+  .nav{display:flex;align-items:center;gap:14px;margin-top:24px}
+  .btn{font:inherit;font-weight:700;font-size:16px;padding:15px 28px;border:0;border-radius:4px;cursor:pointer;background:var(--brand);color:#fff}
+  .btn:hover{background:var(--brand-deep)}
+  .btn[disabled]{opacity:.45;cursor:not-allowed}
+  .back{font:inherit;font-size:15px;font-weight:700;background:none;border:0;color:var(--concrete);cursor:pointer;padding:10px 4px}
+  .err{color:var(--brand-deep);font-size:14px;font-weight:700;min-height:20px;margin:10px 0 0}
+  .thanks .btn{display:inline-block;text-decoration:none}
+  .thanks .btn:hover{color:#fff;text-decoration:none}
+  .qr{display:flex;align-items:center;gap:18px;margin-top:26px;padding-top:22px;border-top:1px solid var(--concrete-line);font-size:15px;color:#45423E}
+  .qr img{width:132px;height:132px;image-rendering:pixelated;flex:none;border:1px solid var(--concrete-line);border-radius:4px}
+  footer{background:var(--dark);color:#A9A49C;font-size:13px;padding:18px clamp(20px,4vw,32px);text-align:center}
+  footer a{color:#D9D5CE}
+  .hp{position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+<header><div class="bar"><a href="/"><img src="assets/usarem-logo-color.png" alt="USA-REM"></a></div></header>
+
+<main>
+  <div class="eyebrow">Client feedback</div>
+  <h1 id="title">We value your feedback.</h1>
+  <p class="lede" id="lede">It was a pleasure working with you. Six quick questions, about a minute, and every answer helps us get better.</p>
+
+  <div class="card">
+    <form id="fb" name="feedback" method="POST" action="/feedback" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+      <input type="hidden" name="form-name" value="feedback">
+      <p class="hp" aria-hidden="true"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <input type="hidden" name="services" id="f-services">
+      <input type="hidden" name="rating-communication" id="f-r1">
+      <input type="hidden" name="rating-timeline" id="f-r2">
+      <input type="hidden" name="rating-results" id="f-r3">
+      <input type="hidden" name="refer-score" id="f-refer">
+      <input type="hidden" name="quote-permission" id="f-quote">
+
+      <div class="progress" aria-hidden="true"><span id="bar"></span></div>
+
+      <section class="step" data-step="1">
+        <h2 class="q">First, who are we hearing from?</h2>
+        <p class="hint">Takes five seconds.</p>
+        <label class="f">Your name<input type="text" name="name" id="f-name" autocomplete="name"></label>
+        <label class="f">Company<input type="text" name="company" id="f-company" autocomplete="organization"></label>
+      </section>
+
+      <section class="step" data-step="2" hidden>
+        <h2 class="q">What did we build for you?</h2>
+        <p class="hint">Tap all that apply.</p>
+        <div class="chips" id="services">
+          <button type="button" class="chip" aria-pressed="false">Website</button>
+          <button type="button" class="chip" aria-pressed="false">Systems</button>
+          </div>
+      </section>
+
+      <section class="step" data-step="3" hidden>
+        <h2 class="q">How did we do?</h2>
+        <p class="hint">1 is poor, 5 is excellent.</p>
+        <div class="row"><b>Communication</b><div class="chips" data-rate="f-r1"></div></div>
+        <div class="row"><b>Timeline</b><div class="chips" data-rate="f-r2"></div></div>
+        <div class="row"><b>Final results</b><div class="chips" data-rate="f-r3"></div></div>
+      </section>
+
+      <section class="step" data-step="4" hidden>
+        <h2 class="q">How likely are you to refer us to another company?</h2>
+        <p class="hint">0 is not likely, 10 is definitely.</p>
+        <div class="chips" data-rate="f-refer" data-min="0" data-max="10"></div>
+        <div class="scale"><span>Not likely</span><span>Definitely</span></div>
+      </section>
+
+      <section class="step" data-step="5" hidden>
+        <h2 class="q">What is one thing we could do better?</h2>
+        <p class="hint">Optional. Honest is welcome.</p>
+        <label class="f" style="margin:0"><span class="hp">Improvement</span><textarea name="improve" id="f-improve"></textarea></label>
+      </section>
+
+      <section class="step" data-step="6" hidden>
+        <h2 class="q">May we quote your feedback on our website?</h2>
+        <p class="hint">We only share it if you say yes.</p>
+        <div class="chips" id="quote">
+          <button type="button" class="chip" aria-pressed="false">Yes</button>
+          <button type="button" class="chip" aria-pressed="false">Yes, first name only</button>
+          <button type="button" class="chip" aria-pressed="false">No</button>
+        </div>
+      </section>
+
+      <p class="err" id="err" role="alert"></p>
+      <div class="nav">
+        <button type="button" class="back" id="back" hidden>Back</button>
+        <button type="button" class="btn" id="next">Next</button>
+      </div>
+    </form>
+
+    <div class="thanks" id="thanks" hidden>
+      <h2 class="q">Thank you. It means a lot.</h2>
+      <p class="lede" style="margin-bottom:18px">If you are willing, a Google review helps other contractors find us. It takes about thirty seconds.</p>
+      <a class="btn" href="https://g.page/r/CYz_uh-p-6jaECE/review" target="_blank" rel="noopener">Leave a Google review</a>
+      <div class="qr">
+        <img src="assets/review-qr.png" alt="QR code linking to the USA-REM Google review page" width="132" height="132">
+        <span>On a computer? Scan this with your phone to leave a review.</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>© USA-REM · TX Real Estate Marketing LLC · <a href="privacy-policy.html">Privacy Policy and Terms of Use</a></footer>
+
+<script>
+(function(){
+  var steps=[].slice.call(document.querySelectorAll('.step')), cur=0, total=steps.length;
+  var $=function(i){return document.getElementById(i)};
+  var form=$('fb'), err=$('err'), next=$('next'), back=$('back'), bar=$('bar');
+
+  // Prefill company from ?c=jomar-electrical
+  try{
+    var c=new URLSearchParams(location.search).get('c');
+    if(c){$('f-company').value=c.replace(/[-_]+/g,' ').replace(/\b\w/g,function(m){return m.toUpperCase()})}
+  }catch(e){}
+
+  // Rating chips
+  [].forEach.call(document.querySelectorAll('[data-rate]'),function(box){
+    var min=+(box.dataset.min||1), max=+(box.dataset.max||5), target=$(box.dataset.rate);
+    for(var n=min;n<=max;n++){
+      var b=document.createElement('button');b.type='button';b.className='chip';b.textContent=n;b.setAttribute('aria-pressed','false');
+      b.addEventListener('click',function(){
+        [].forEach.call(box.children,function(x){x.setAttribute('aria-pressed','false')});
+        this.setAttribute('aria-pressed','true');target.value=this.textContent;err.textContent='';
+      });
+      box.appendChild(b);
+    }
+  });
+
+  // Multi-select services
+  [].forEach.call($('services').children,function(b){
+    b.addEventListener('click',function(){
+      b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');
+      $('f-services').value=[].filter.call($('services').children,function(x){return x.getAttribute('aria-pressed')==='true'}).map(function(x){return x.textContent}).join(', ');
+      err.textContent='';
+    });
+  });
+
+  // Single-select quote permission
+  [].forEach.call($('quote').children,function(b){
+    b.addEventListener('click',function(){
+      [].forEach.call($('quote').children,function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');$('f-quote').value=b.textContent;err.textContent='';
+    });
+  });
+
+  function show(i){
+    cur=i;steps.forEach(function(s,k){s.hidden=k!==i});
+    bar.style.width=((i+1)/total*100)+'%';
+    back.hidden=i===0;next.textContent=i===total-1?'Send feedback':'Next';
+    err.textContent='';window.scrollTo({top:0,behavior:'smooth'});
+  }
+
+  function valid(){
+    if(cur===0){ if(!$('f-name').value.trim()||!$('f-company').value.trim()){err.textContent='Please add your name and company.';return false} }
+    if(cur===1 && !$('f-services').value){err.textContent='Tap at least one option.';return false}
+    if(cur===2 && !($('f-r1').value&&$('f-r2').value&&$('f-r3').value)){err.textContent='Please rate all three.';return false}
+    if(cur===3 && $('f-refer').value===''){err.textContent='Tap a number from 0 to 10.';return false}
+    if(cur===5 && !$('f-quote').value){err.textContent='Please choose one.';return false}
+    return true;
+  }
+
+  function send(){
+    next.disabled=true;next.textContent='Sending...';
+    var data=new URLSearchParams(new FormData(form)).toString();
+    fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:data})
+      .then(function(r){ if(!r.ok) throw new Error(r.status); done() })
+      .catch(function(){ next.disabled=false;next.textContent='Send feedback';err.textContent='That did not go through. Please try again, or email info@usa-rem.com.' });
+  }
+
+  function done(){
+    form.hidden=true;$('thanks').hidden=false;
+    $('title').textContent='Thank you.';
+    $('lede').hidden=true;window.scrollTo({top:0,behavior:'smooth'});
+  }
+
+  next.addEventListener('click',function(){ if(!valid())return; if(cur===total-1){send()}else{show(cur+1)} });
+  back.addEventListener('click',function(){ if(cur>0)show(cur-1) });
+  form.addEventListener('submit',function(e){e.preventDefault()});
+  show(0);
+})();
+</script>
+</body>
+</html>

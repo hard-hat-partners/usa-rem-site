@@ -5,3 +5,8 @@
   for = "/forms.html"
   [headers.values]
     X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/feedback.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
