@@ -106,6 +106,28 @@
       </section>
 
       <section class="step" data-step="5" hidden>
+        <h2 class="q">Anything coming up we can help with?</h2>
+        <p class="hint">Optional. Tap any that apply.</p>
+        <div class="chips" id="nextup">
+          <button type="button" class="chip" aria-pressed="false">Website updates</button>
+          <button type="button" class="chip" aria-pressed="false">Systems</button>
+          <button type="button" class="chip" aria-pressed="false">Something else</button>
+          <button type="button" class="chip" aria-pressed="false" data-none="1">Nothing right now</button>
+        </div>
+        <div id="when" hidden style="margin-top:20px">
+          <div class="q" style="font-size:15px;margin:0 0 8px">How soon?</div>
+          <div class="chips" id="timing">
+            <button type="button" class="chip" aria-pressed="false">This month</button>
+            <button type="button" class="chip" aria-pressed="false">Next few months</button>
+            <button type="button" class="chip" aria-pressed="false">Later this year</button>
+          </div>
+          <label class="f" style="margin:18px 0 0"><span class="hp">Tell us more</span><input type="text" name="next-notes" id="f-nextnotes" placeholder="A few words, if you like"></label>
+        </div>
+        <input type="hidden" name="next-up" id="f-nextup">
+        <input type="hidden" name="next-timing" id="f-timing">
+      </section>
+
+      <section class="step" data-step="6" hidden>
         <h2 class="q">Who else should we meet?</h2>
         <p class="hint">A contractor, a friend in the industry, anyone you think we would get along with. A name and email or phone is plenty. No one comes to mind? No problem.</p>
         <label class="f" style="margin:0"><span class="hp">Who else should we meet</span><textarea name="referral" id="f-ref" style="min-height:100px"></textarea></label>
@@ -159,6 +181,29 @@
       b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');
       $('f-services').value=[].filter.call($('services').children,function(x){return x.getAttribute('aria-pressed')==='true'}).map(function(x){return x.textContent}).join(', ');
       err.textContent='';
+    });
+  });
+
+  var nu=$('nextup'), tm=$('timing');
+  function syncNext(){
+    var on=[].filter.call(nu.children,function(x){return x.getAttribute('aria-pressed')==='true'});
+    $('f-nextup').value=on.map(function(x){return x.textContent}).join(', ');
+    var real=on.some(function(x){return !x.dataset.none});
+    $('when').hidden=!real;
+    if(!real){[].forEach.call(tm.children,function(x){x.setAttribute('aria-pressed','false')});$('f-timing').value='';$('f-nextnotes').value=''}
+  }
+  [].forEach.call(nu.children,function(b){
+    b.addEventListener('click',function(){
+      var was=b.getAttribute('aria-pressed')==='true';
+      if(b.dataset.none){[].forEach.call(nu.children,function(x){x.setAttribute('aria-pressed','false')})}
+      else{[].forEach.call(nu.children,function(x){if(x.dataset.none)x.setAttribute('aria-pressed','false')})}
+      b.setAttribute('aria-pressed',was?'false':'true');syncNext();
+    });
+  });
+  [].forEach.call(tm.children,function(b){
+    b.addEventListener('click',function(){
+      [].forEach.call(tm.children,function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');$('f-timing').value=b.textContent;
     });
   });
 
