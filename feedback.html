@@ -55,7 +55,7 @@
 <main>
   <div class="eyebrow">Client feedback</div>
   <h1 id="title">We value your feedback.</h1>
-  <p class="lede" id="lede">It was a pleasure working with you. Six quick questions, about a minute, and every answer helps us get better.</p>
+  <p class="lede" id="lede">It was a pleasure working with you. A few quick questions, about a minute, and every answer helps us get better.</p>
 
   <div class="card">
     <form id="fb" name="feedback" method="POST" action="/feedback" data-netlify="true" netlify-honeypot="bot-field" novalidate>
@@ -102,14 +102,20 @@
       </section>
 
       <section class="step" data-step="5" hidden>
-        <h2 class="q">What is one thing we could do better?</h2>
+        <h2 class="q">What did we do well?</h2>
+        <p class="hint">In your own words. This is the part we may quote, if you say yes on the last question.</p>
+        <label class="f" style="margin:0"><span class="hp">What we did well</span><textarea name="did-well" id="f-well"></textarea></label>
+      </section>
+
+      <section class="step" data-step="6" hidden>
+        <h2 class="q">What can we do better?</h2>
         <p class="hint">Optional. Honest is welcome.</p>
         <label class="f" style="margin:0"><span class="hp">Improvement</span><textarea name="improve" id="f-improve"></textarea></label>
       </section>
 
-      <section class="step" data-step="6" hidden>
+      <section class="step" data-step="7" hidden>
         <h2 class="q">May we quote your feedback on our website?</h2>
-        <p class="hint">We only share it if you say yes.</p>
+        <p class="hint">We only share your words if you say yes.</p>
         <div class="chips" id="quote">
           <button type="button" class="chip" aria-pressed="false">Yes</button>
           <button type="button" class="chip" aria-pressed="false">Yes, first name only</button>
@@ -192,7 +198,7 @@
     if(cur===1 && !$('f-services').value){err.textContent='Tap at least one option.';return false}
     if(cur===2 && !($('f-r1').value&&$('f-r2').value&&$('f-r3').value)){err.textContent='Please rate all three.';return false}
     if(cur===3 && $('f-refer').value===''){err.textContent='Tap a number from 0 to 10.';return false}
-    if(cur===5 && !$('f-quote').value){err.textContent='Please choose one.';return false}
+    if(cur===6 && !$('f-quote').value){err.textContent='Please choose one.';return false}
     return true;
   }
 
