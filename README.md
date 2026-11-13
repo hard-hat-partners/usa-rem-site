@@ -14,3 +14,4 @@ This repo is the source of truth for usa-rem.com. Netlify project `hard-hat-part
 
 - 2026-11-10: baseline commit, taken from the live Netlify deploy of 2026-11-05 (6aecf936).
 - 2026-11-10: Jomar moved to the live portfolio; card screenshot recaptured from jomarinc.com.
+- 2026-11-12: seven trade and location pages live (/specialty-contractors, /engineers, /general-contractors, /dallas-fort-worth, /houston, /austin-san-antonio, /colorado), built from the approved canvas with live-site header, footer, and section treatments. New pages are plain static HTML; one Netlify form "project" with a hidden "page" field. Footer "Our work" column on every page. PR #1.
