@@ -317,8 +317,8 @@ article{transition:transform .25s ease, box-shadow .25s ease}article:hover{trans
 <script>
 (function () {
   var B = window.BRAND || {};
-  if (B.logo) document.querySelectorAll('[data-brand-logo]').forEach(function (i) { i.src = B.logo; i.alt = B.name; });
-  if (B.logoWhite) document.querySelectorAll('[data-brand-logo-white]').forEach(function (i) { i.src = B.logoWhite; i.alt = B.name; });
+  if (B.logo) document.querySelectorAll('[data-brand-logo]').forEach(function (i) { i.src = B.logo.charAt(0) === '/' || /^https?:/.test(B.logo) ? B.logo : '/' + B.logo.replace(/^\.\//, ''); i.alt = B.name; });
+  if (B.logoWhite) document.querySelectorAll('[data-brand-logo-white]').forEach(function (i) { i.src = B.logoWhite.charAt(0) === '/' || /^https?:/.test(B.logoWhite) ? B.logoWhite : '/' + B.logoWhite.replace(/^\.\//, ''); i.alt = B.name; });
   var btn = document.querySelector('.hdr-burger'), menu = document.getElementById('mobile-menu');
   if (btn && menu) {
     btn.addEventListener('click', function () { var open = menu.hidden; menu.hidden = !open; btn.setAttribute('aria-expanded', String(open)); });

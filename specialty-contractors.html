@@ -167,6 +167,20 @@ article{transition:transform .25s ease, box-shadow .25s ease}article:hover{trans
 </article></div>
 </div>
 </section>
+<section style="background:#FFFFFF;border-top:1px solid #E4E0DA">
+<div style="max-width:1240px;margin:0 auto;padding:104px 24px;display:flex;flex-direction:column;gap:36px">
+<p style="margin: 0; font-family: 'Bebas Neue', Impact, sans-serif; font-size: 24px; letter-spacing: 0.06em; color: #AD1528">Case studies</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:20px"><a href="/work/southland-family" data-reveal="0" class="photo-card lift" style="position:relative;display:block;min-height:320px;border-radius:8px;overflow:hidden;background:#14264A;color:#fff;text-decoration:none">
+<img src="/assets/southland-jewel-landmark.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:left top;display:block;opacity:.6">
+<span aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,38,74,.1) 10%,rgba(20,38,74,.95) 100%)"></span>
+<span style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;gap:8px;padding:28px"><span style="font-family:'Bebas Neue', Impact, sans-serif;letter-spacing:.06em;font-size:20px;color:#F2838E">The Southland Family</span><span style="font-size:clamp(22px,2.2vw,28px);font-weight:800;line-height:1.2">Three Companies. One Family. Built to Keep Crews Moving.</span><span style="font-size:15px;font-weight:700;color:#F2838E;display:inline-flex;align-items:center;gap:8px">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></span>
+</a><a href="/work/jomar-electrical" data-reveal="80" class="photo-card lift" style="position:relative;display:block;min-height:320px;border-radius:8px;overflow:hidden;background:#14264A;color:#fff;text-decoration:none">
+<img src="/assets/shot-jomar.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:left top;display:block;opacity:.6">
+<span aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,38,74,.1) 10%,rgba(20,38,74,.95) 100%)"></span>
+<span style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;gap:8px;padding:28px"><span style="font-family:'Bebas Neue', Impact, sans-serif;letter-spacing:.06em;font-size:20px;color:#F2838E">Jomar Electrical</span><span style="font-size:clamp(22px,2.2vw,28px);font-weight:800;line-height:1.2">Three Decades of Powering Texas.</span><span style="font-size:15px;font-weight:700;color:#F2838E;display:inline-flex;align-items:center;gap:8px">Read the case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></span>
+</a></div>
+</div>
+</section>
 <section style="background: #FFFFFF; border-top: 1px solid #E4E0DA">
 <div style="max-width: 1240px; margin: 0 auto; padding: 104px 24px; display: flex; flex-wrap: wrap; gap: 56px">
 <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 12px"><p style="margin: 0; font-family: 'Bebas Neue', Impact, sans-serif; font-size: 24px; letter-spacing: 0.06em; color: #AD1528">Written about your work</p><h2 style="margin: 0; font-size: clamp(34px, 3.8vw, 52px); line-height: 1.06; font-weight: 800; color: #1E1C1A">Your history. Your people. Your work.</h2></div>
@@ -328,8 +342,8 @@ article{transition:transform .25s ease, box-shadow .25s ease}article:hover{trans
 <script>
 (function () {
   var B = window.BRAND || {};
-  if (B.logo) document.querySelectorAll('[data-brand-logo]').forEach(function (i) { i.src = B.logo; i.alt = B.name; });
-  if (B.logoWhite) document.querySelectorAll('[data-brand-logo-white]').forEach(function (i) { i.src = B.logoWhite; i.alt = B.name; });
+  if (B.logo) document.querySelectorAll('[data-brand-logo]').forEach(function (i) { i.src = B.logo.charAt(0) === '/' || /^https?:/.test(B.logo) ? B.logo : '/' + B.logo.replace(/^\.\//, ''); i.alt = B.name; });
+  if (B.logoWhite) document.querySelectorAll('[data-brand-logo-white]').forEach(function (i) { i.src = B.logoWhite.charAt(0) === '/' || /^https?:/.test(B.logoWhite) ? B.logoWhite : '/' + B.logoWhite.replace(/^\.\//, ''); i.alt = B.name; });
   var btn = document.querySelector('.hdr-burger'), menu = document.getElementById('mobile-menu');
   if (btn && menu) {
     btn.addEventListener('click', function () { var open = menu.hidden; menu.hidden = !open; btn.setAttribute('aria-expanded', String(open)); });
