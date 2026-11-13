@@ -27,3 +27,10 @@ a:hover{color:var(--brand-deep);text-decoration:underline}
 
 html,body{overflow-x:hidden;overflow-x:clip;max-width:100%}
 image-slot{pointer-events:none}
+
+/* Footer: "Our work" column (two short lists side by side, then "Anywhere you build") */
+.ftr-work-links{display:grid;grid-template-columns:max-content max-content;column-gap:32px;row-gap:8px}
+.ftr-anywhere{grid-column:1 / -1;margin-top:6px;font-weight:700}
+@media (min-width:1000px){.ftr-grid{grid-template-columns:minmax(0,1fr) minmax(0,.8fr) minmax(0,1.55fr) minmax(0,1.1fr) !important}}
+@media (min-width:700px) and (max-width:999px){.ftr-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
+@media (max-width:420px){.ftr-work-links{grid-template-columns:1fr}}
