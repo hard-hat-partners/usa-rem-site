@@ -53,6 +53,11 @@ image-slot{pointer-events:none}
 .mnav-dd summary::-webkit-details-marker{display:none}
 .mnav-dd[open] .nav-dd-chev{transform:rotate(180deg)}
 .mnav-dd-body{display:flex;flex-direction:column;padding:6px 0 14px 14px;border-left:3px solid var(--brand);margin:10px 0 4px}
-.mnav-dd-main{display:flex;align-items:center;gap:8px;font-weight:800;font-size:16px;color:var(--brand);text-decoration:none;padding:8px 0 12px}
+.mnav-dd-main{display:flex;align-items:center;gap:8px;font-weight:800;font-size:16px;color:var(--ink);text-decoration:none;padding:8px 0 12px}
 .mnav-dd-col{display:flex;flex-direction:column;padding-top:8px}
 .mnav-dd-col a{font-size:16px;font-weight:600;color:var(--ink);text-decoration:none;padding:9px 0}
+.nav-dd-col a.nav-dd-any,.mnav-dd-col a.mnav-dd-any{display:inline-flex;align-items:center;gap:6px;font-weight:700;color:var(--brand)}
+.nav-dd-col a.nav-dd-any{margin-top:6px;padding-top:9px;border-top:1px solid var(--concrete-line)}
+.nav-dd-col a.nav-dd-any:hover,.nav-dd-col a.nav-dd-any:focus-visible{color:#8A0F1F}
+.nav-dd-any svg,.mnav-dd-any svg{transition:transform .18s ease}
+.nav-dd-any:hover svg,.nav-dd-any:focus-visible svg{transform:translateX(3px)}
