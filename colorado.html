@@ -173,7 +173,7 @@ article{transition:transform .25s ease, box-shadow .25s ease}article:hover{trans
 <p style="margin: 0; font-size: 22px; font-weight: 800; color: #FFFFFF">Foundation websites start at $2,999.</p>
 <a href="https://meetings-na2.hubspot.com/joshua40" target="_blank" rel="noopener" style="text-decoration: none; color: #FFFFFF; font-weight: 700; font-size: 17px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px">Prefer to talk? Book a call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
 </div>
-<form name="project" method="POST" action="/colorado" data-netlify="true" netlify-honeypot="bot-field" style="position:relative;flex: 1.2 1 440px; min-width: 0; background: #FFFFFF; color: #1E1C1A; border-radius: 8px; padding: clamp(20px, 4vw, 36px); padding-top: clamp(28px, 4vw, 42px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 18px; box-shadow:0 30px 60px -28px rgba(20,14,10,.6); overflow:hidden">
+<form name="project" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="position:relative;flex: 1.2 1 440px; min-width: 0; background: #FFFFFF; color: #1E1C1A; border-radius: 8px; padding: clamp(20px, 4vw, 36px); padding-top: clamp(28px, 4vw, 42px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 18px; box-shadow:0 30px 60px -28px rgba(20,14,10,.6); overflow:hidden">
 <span aria-hidden="true" style="position:absolute;left:0;right:0;top:0;height:6px;background:repeating-linear-gradient(45deg,var(--brand) 0 10px,var(--brand-deep) 10px 20px)"></span>
 <input type="hidden" name="form-name" value="project">
 <input type="hidden" name="page" value="colorado">
@@ -257,7 +257,7 @@ article{transition:transform .25s ease, box-shadow .25s ease}article:hover{trans
     menu.addEventListener('click', function (e) { if (e.target.closest('a')) { menu.hidden = true; btn.setAttribute('aria-expanded', 'false'); } });
   }
 })();
-document.querySelectorAll('form[data-netlify]').forEach(function (f) {
+document.querySelectorAll('form[name="project"]').forEach(function (f) {
   f.addEventListener('submit', function (ev) {
     if (!window.fetch) return;
     ev.preventDefault();
