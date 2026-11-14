@@ -41,3 +41,17 @@ document.documentElement.setAttribute('data-brand', window.BRAND.active);
   head();
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', head);
 })();
+
+/* Jump to #section links (like /websites#pricing) once the page has rendered.
+   Most pages draw their sections after load, so the browser's own jump finds nothing. */
+(function () {
+  if (typeof window === 'undefined' || !location.hash || location.hash.length < 2) return;
+  var id = decodeURIComponent(location.hash.slice(1)), tries = 0;
+  function go() {
+    var el = document.getElementById(id);
+    if (!el) { if (++tries < 60) setTimeout(go, 100); return; }
+    el.scrollIntoView({ block: 'start' });
+    setTimeout(function () { el.scrollIntoView({ block: 'start' }); }, 700);
+  }
+  if (document.readyState === 'complete') go(); else window.addEventListener('load', go);
+})();

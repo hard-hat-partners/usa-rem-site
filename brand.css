@@ -61,3 +61,6 @@ image-slot{pointer-events:none}
 .nav-dd-col a.nav-dd-any:hover,.nav-dd-col a.nav-dd-any:focus-visible{color:#8A0F1F}
 .nav-dd-any svg,.mnav-dd-any svg{transition:transform .18s ease}
 .nav-dd-any:hover svg,.nav-dd-any:focus-visible svg{transform:translateX(3px)}
+
+/* Leave room for the sticky header when jumping to a section */
+section[id]{scroll-margin-top:84px}
