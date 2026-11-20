@@ -19,7 +19,8 @@ Contact: 214.207.6956, info@usa-rem.com. Book a call: https://meetings-na2.hubsp
 
 ## Who we build for
 
-- [Specialty contractors and suppliers](https://usa-rem.com/specialty-contractors): electrical, masonry and stucco, concrete and asphalt, fiber and communications, stone fabrication, aggregates and building supply
+- [Specialty contractors](https://usa-rem.com/specialty-contractors): electrical, masonry and stucco, concrete and asphalt, fiber and communications, stone fabrication
+- [Material suppliers](https://usa-rem.com/suppliers): websites and ordering systems for sand and gravel, masonry and stucco supply, cast stone, and building products; informational sites at standard pricing, large online stores priced custom
 - [Engineers](https://usa-rem.com/engineers): civil engineering, metro district engineering and services, stormwater, earth retention and shotcrete, specialty foundations
 - [General contractors](https://usa-rem.com/general-contractors): multifamily, K-12, municipal and civic, faith-based, and commercial builders
 
@@ -34,6 +35,7 @@ Contact: 214.207.6956, info@usa-rem.com. Book a call: https://meetings-na2.hubsp
 
 - [The Southland Family](https://usa-rem.com/work/southland-family): three websites and the systems behind the yard for Southland Stucco and Masonry, Southland Sand and Gravel, and SMS Building Products
 - [Jomar Electrical](https://usa-rem.com/work/jomar-electrical): a website organized around six divisions, a safety story, and careers in four Texas cities
+- [Viterra Stone](https://usa-rem.com/work/viterra-stone): a rebrand from Carrollton Cast Stone, a new website for a cast stone and natural stone fabricator, and an email move from Google Workspace to Microsoft 365
 - [Oscar Orduño, Inc.](https://usa-rem.com/work/oscar-orduno): a filterable project portfolio and service pages for an earth retention and specialty foundations contractor
 - [The CenterPoint Family](https://usa-rem.com/work/centerpoint-family): three websites built as one brand family for development and metro district engineering firms
 
